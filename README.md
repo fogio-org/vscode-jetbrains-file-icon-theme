@@ -1,2 +1,1 @@
-# vscode-jetbrains-file-icon-theme
-JetBrains File Icon Theme for VS Code
+# JetBrains File Icon Theme for VS Code

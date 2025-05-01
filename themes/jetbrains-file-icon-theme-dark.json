@@ -1,0 +1,22 @@
+{
+    "iconDefinitions": {},
+    "file": "file_text",
+    "folder": "folder",
+    "folderNames": {},
+    "fileNames": {},
+    "fileExtensions": {},
+    "fonts": [
+		{
+		  "id": "JetBrainsMono",
+		  "src": [
+			{
+			  "path": "./fonts/JetBrainsMono-Regular.woff",
+			  "format": "woff"
+			}
+		  ],
+		  "weight": "normal",
+		  "style": "normal",
+		  "size": "100%"
+		}
+	]
+}

@@ -1,0 +1,56 @@
+{
+  "name": "jetbrains-file-icon-theme",
+  "displayName": "JetBrains File Icon Theme",
+  "description": "",
+  "publisher": "fogio",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": "https://github.com/fogio-org/vscode-jetbrains-file-icon-theme",
+  "icon": "assets/img/icon.png",
+  "engines": {
+    "vscode": "^1.21.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "extensionKind": [
+    "ui",
+    "workspace"
+  ],
+  "keywords": [
+    "python",
+    "go",
+    "golang",
+    "semantic",
+    "highlighting",
+    "cold",
+    "dark",
+    "darcula",
+    "darkula",
+    "dracula",
+    "drakula",
+    "pycharm",
+    "IntelliJ",
+    "New UI",
+    "icons",
+    "JetBrains",
+    "JetBrains Mono",
+    "PyCharm",
+    "font",
+    "Goland"
+  ],
+  "contributes": {
+    "iconThemes": [
+      {
+        "id": "jetbrains-file-icon-theme-dark",
+        "label": "JetBrains File Icon Theme Dark",
+        "path": "./themes/jetbrains-file-icon-theme-dark.json"
+      },
+      {
+        "id": "jetbrains-file-icon-theme-light",
+        "label": "JetBrains File Icon Theme Light",
+        "path": "./themes/jetbrains-file-icon-theme-light.json"
+      }
+    ]
+  }
+}
