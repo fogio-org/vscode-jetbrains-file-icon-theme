@@ -1,6 +1,6 @@
-# JetBrains File Icon Theme for VS Code
+# Extended JetBrains File Icon Theme for VS Code
 
-The goal of the JetBrains File Icon Theme is to reduce visual clutter and give you more space for your code and thoughts.
+The goal of the Extended JetBrains File Icon Theme is to reduce visual clutter and give you more space for your code and thoughts.
 
 I hope this theme will be the one you enjoy working with day and night.
 
@@ -28,7 +28,7 @@ Set File Icon Theme ([guide](https://code.visualstudio.com/docs/configure/themes
 
 ### Font
 
-You can use [JetBrains Mono](https://www.jetbrains.com/lp/mono/) font with the JetBrains File Icon Theme.
+You can use [JetBrains Mono](https://www.jetbrains.com/lp/mono/) font with the Extended JetBrains File Icon Theme.
 
 VS Code doesn't provide clear functionality for adding a custom font to color theme... But I managed to add the font to the File icon theme!
 

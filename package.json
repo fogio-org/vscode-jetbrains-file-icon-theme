@@ -1,6 +1,6 @@
 {
   "name": "jetbrains-file-icon-theme",
-  "displayName": "JetBrains File Icon Theme",
+  "displayName": "Extended JetBrains File Icon Theme",
   "description": "JetBrains IDEs inspired icon theme",
   "publisher": "fogio",
   "version": "1.0.0",
@@ -54,12 +54,12 @@
     "iconThemes": [
       {
         "id": "jetbrains-file-icon-theme-dark",
-        "label": "JetBrains File Icon Theme Dark",
+        "label": "Extended JetBrains File Icon Theme Dark",
         "path": "./themes/jetbrains-file-icon-theme-dark.json"
       },
       {
         "id": "jetbrains-file-icon-theme-light",
-        "label": "JetBrains File Icon Theme Light",
+        "label": "Extended JetBrains File Icon Theme Light",
         "path": "./themes/jetbrains-file-icon-theme-light.json"
       }
     ]
