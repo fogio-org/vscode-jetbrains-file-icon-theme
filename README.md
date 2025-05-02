@@ -1,5 +1,9 @@
 # JetBrains File Icon Theme for VS Code
 
+The goal of the JetBrains File Icon Theme is to reduce visual clutter and give you more space for your code and thoughts.
+
+I hope this theme will be the one you enjoy working with day and night.
+
 ## Preview
 
 ### Folders icons
@@ -20,7 +24,7 @@ Icons for reserved file names
 
 ### File icon theme
 
-...
+Set File Icon Theme ([guide](https://code.visualstudio.com/docs/configure/themes#_file-icon-themes))
 
 ### Font
 

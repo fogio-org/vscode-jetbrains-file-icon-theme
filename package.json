@@ -3,7 +3,7 @@
   "displayName": "JetBrains File Icon Theme",
   "description": "JetBrains IDEs inspired icon theme",
   "publisher": "fogio",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "homepage": "https://github.com/fogio-org/vscode-jetbrains-file-icon-theme",
   "bugs": {
@@ -43,6 +43,7 @@
     "icons",
     "icon-theme",
     "theme",
+    "new ui",
     "JetBrains Mono",
     "font",
     "cold",
