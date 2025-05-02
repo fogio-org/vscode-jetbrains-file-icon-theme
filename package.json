@@ -1,11 +1,19 @@
 {
   "name": "jetbrains-file-icon-theme",
   "displayName": "JetBrains File Icon Theme",
-  "description": "",
+  "description": "JetBrains IDEs inspired icon theme",
   "publisher": "fogio",
   "version": "0.0.1",
   "license": "MIT",
-  "repository": "https://github.com/fogio-org/vscode-jetbrains-file-icon-theme",
+  "homepage": "https://github.com/fogio-org/vscode-jetbrains-file-icon-theme",
+  "bugs": {
+    "url": "https://github.com/fogio-org/vscode-jetbrains-file-icon-theme/issues",
+    "email": "nickitonov@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fogio-org/vscode-jetbrains-file-icon-theme.git"
+  },
   "icon": "assets/img/icon.png",
   "engines": {
     "vscode": "^1.21.0"
@@ -18,26 +26,28 @@
     "workspace"
   ],
   "keywords": [
-    "python",
-    "go",
-    "golang",
-    "semantic",
-    "highlighting",
+    "jetbrains",
+    "intellij",
+    "pycharm",
+    "goland",
+    "rustrover",
+    "webstorm",
+    "idea",
+    "clion",
+    "phpstorm",
+    "rubymiine",
+    "appcode",
+    "datagrip",
+    "rider",
+    "dataspell",
+    "icons",
+    "icon-theme",
+    "theme",
+    "JetBrains Mono",
+    "font",
     "cold",
     "dark",
-    "darcula",
-    "darkula",
-    "dracula",
-    "drakula",
-    "pycharm",
-    "IntelliJ",
-    "New UI",
-    "icons",
-    "JetBrains",
-    "JetBrains Mono",
-    "PyCharm",
-    "font",
-    "Goland"
+    "material"
   ],
   "contributes": {
     "iconThemes": [
