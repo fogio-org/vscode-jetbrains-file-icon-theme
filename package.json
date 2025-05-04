@@ -54,13 +54,13 @@
     "iconThemes": [
       {
         "id": "jetbrains-file-icon-theme-dark",
-        "label": "Extended JetBrains File Icon Theme Dark",
-        "path": "./themes/jetbrains-file-icon-theme-dark.json"
+        "label": "Dark JetBrains New UI File Icon Theme",
+        "path": "./themes/dark-jetbrains-icon-theme.json"
       },
       {
         "id": "jetbrains-file-icon-theme-light",
-        "label": "Extended JetBrains File Icon Theme Light",
-        "path": "./themes/jetbrains-file-icon-theme-light.json"
+        "label": "Light JetBrains New UI File Icon Theme",
+        "path": "./themes/light-jetbrains-icon-theme.json"
       }
     ]
   }
