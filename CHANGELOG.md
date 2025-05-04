@@ -2,6 +2,7 @@
 
 ## 1.1.0
 
+- Add Auto dark/light theme
 - Add badges to readme
 - Update displayName, description
 

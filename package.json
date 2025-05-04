@@ -53,13 +53,18 @@
   "contributes": {
     "iconThemes": [
       {
+        "id": "jetbrains-file-icon-theme-auto",
+        "label": "| Auto | JetBrains New UI File Icon Theme",
+        "path": "./themes/auto-jetbrains-icon-theme.json"
+      },
+      {
         "id": "jetbrains-file-icon-theme-dark",
-        "label": "Dark JetBrains New UI File Icon Theme",
+        "label": "| Dark | JetBrains New UI File Icon Theme",
         "path": "./themes/dark-jetbrains-icon-theme.json"
       },
       {
         "id": "jetbrains-file-icon-theme-light",
-        "label": "Light JetBrains New UI File Icon Theme",
+        "label": "| Light | JetBrains New UI File Icon Theme",
         "path": "./themes/light-jetbrains-icon-theme.json"
       }
     ]
