@@ -1,9 +1,9 @@
 {
   "name": "jetbrains-file-icon-theme",
-  "displayName": "Extended JetBrains File Icon Theme",
-  "description": "JetBrains IDEs inspired icon theme",
+  "displayName": "JetBrains New UI File Icon Theme Extended",
+  "description": "JetBrains IDEs New UI inspired icon theme. Minimize distractions and boost productivity",
   "publisher": "fogio",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "homepage": "https://github.com/fogio-org/vscode-jetbrains-file-icon-theme",
   "bugs": {
