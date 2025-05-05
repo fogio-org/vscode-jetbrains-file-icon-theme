@@ -1,5 +1,6 @@
 {
     "iconDefinitions": {
+        // folders
         "folder_android_light": {
             "iconPath": "./icons/folder/folder_android_light.svg"
         },
@@ -63,6 +64,12 @@
         "folder_templates_light": {
             "iconPath": "./icons/folder/folder_templates_light.svg"
         },
+        "folder_idea_light": {
+            "iconPath": "./icons/folder/folder_idea_light.svg"
+        },
+
+        // files
+
         "file_text_light": {
             "iconPath": "./icons/file/text.svg"
         },
@@ -364,7 +371,7 @@
             "iconPath": "./icons/file/goTemplate.svg"
         },
         "file_go_run_light": {
-            "iconPath": "./icons/file/goRunApplication_dark.svg"
+            "iconPath": "./icons/file/goRunApplication.svg"
         }
     },
     "file": "file_text_light",
@@ -402,7 +409,9 @@
         ".git": "folder_git_light",
         ".github": "folder_git_light",
         ".gitlab": "folder_git_light",
-        "templates": "folder_templates_light"
+        "templates": "folder_templates_light",
+        ".idea": "folder_idea_light",
+        ".vscode": "folder_idea_light"
     },
     "fileNames": {
         "dune": "file_dune_light",

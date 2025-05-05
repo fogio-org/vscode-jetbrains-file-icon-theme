@@ -31,7 +31,9 @@ Icons for reserved file names
 
 ### File icon theme
 
-Set File Icon Theme ([guide](https://code.visualstudio.com/docs/configure/themes#_file-icon-themes))
+![Select theme](https://raw.githubusercontent.com/fogio-org/vscode-jetbrains-file-icon-theme/refs/heads/master/assets/img/guide_select_theme.png)
+
+You can choose icons pack for dark or light theme. An "Auto" theme is also available that adapts to the color theme.
 
 ### Font
 
