@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.1.1
+
+- Fix main.go light icon
+
 ## 1.1.0
 
 - Add Auto dark/light theme
