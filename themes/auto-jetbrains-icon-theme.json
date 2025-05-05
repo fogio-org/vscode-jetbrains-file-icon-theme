@@ -64,6 +64,9 @@
         "folder_templates": {
             "iconPath": "./icons/folder/folder_templates_dark.svg"
         },
+        "folder_idea": {
+            "iconPath": "./icons/folder/folder_idea_dark.svg"
+        },
         "file_text": {
             "iconPath": "./icons/file/text_dark.svg"
         },
@@ -434,6 +437,9 @@
         "folder_templates_light": {
             "iconPath": "./icons/folder/folder_templates_light.svg"
         },
+        "folder_idea_light": {
+            "iconPath": "./icons/folder/folder_idea_light.svg"
+        },
         "file_text_light": {
             "iconPath": "./icons/file/text.svg"
         },
@@ -773,7 +779,9 @@
         ".git": "folder_git",
         ".github": "folder_git",
         ".gitlab": "folder_git",
-        "templates": "folder_templates"
+        "templates": "folder_templates",
+        ".idea": "folder_idea",
+        ".vscode": "folder_idea"
     },
     "fileNames": {
         "dune": "file_dune",
@@ -1019,7 +1027,9 @@
             ".git": "folder_git_light",
             ".github": "folder_git_light",
             ".gitlab": "folder_git_light",
-            "templates": "folder_templates_light"
+            "templates": "folder_templates_light",
+            ".idea": "folder_idea_light",
+            ".vscode": "folder_idea_light"
         },
         "fileNames": {
             "dune": "file_dune_light",

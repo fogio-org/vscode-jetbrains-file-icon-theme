@@ -3,6 +3,7 @@
 ## 1.1.1
 
 - Fix main.go light icon
+- Add ".vscode", ".idea" folder icon
 
 ## 1.1.0
 
