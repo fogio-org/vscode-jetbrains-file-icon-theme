@@ -27,6 +27,12 @@ Icons for reserved file names
 
 ![Preview file names icons](https://raw.githubusercontent.com/fogio-org/vscode-jetbrains-file-icon-theme/refs/heads/master/assets/img/preview_file_names.png)
 
+### Icons for go test files (experimental)
+
+![Preview go test files](https://raw.githubusercontent.com/fogio-org/vscode-jetbrains-file-icon-theme/refs/heads/master/assets/img/preview_go_test_files.png)
+
+Activation guide is located below.
+
 ## Install
 
 ### File icon theme
@@ -34,6 +40,26 @@ Icons for reserved file names
 ![Select theme](https://raw.githubusercontent.com/fogio-org/vscode-jetbrains-file-icon-theme/refs/heads/master/assets/img/guide_select_theme.png)
 
 You can choose icons pack for dark or light theme. An "Auto" theme is also available that adapts to the color theme.
+
+### Enable Icons for go test files (experimental)
+
+VS Code does not allow defining an icon for a file using a regular expression. However, we have implemented a workaround for this.
+
+This feature is experimental, in case of any problems we are waiting for an issue to solve the problem as quickly as possible
+
+By default, this functionality is disabled. You can enable it through the Settings UI:
+
+![guide_enable_go_test_icons](https://raw.githubusercontent.com/fogio-org/vscode-jetbrains-file-icon-theme/refs/heads/master/assets/img/guide_enable_go_test_icons.png)
+
+or settings.json file:
+
+```json
+"jetbrains-file-icon-theme.enableGoTestIcons": true,
+```
+
+After enabling this setting, the theme begins to automatically add *_test.go files with a special icon. However, due to vscode limitations, the icons are cached and to see the special icon you need to restart ide. We decided not to add automatic restart in order not to cause inconvenience to users.
+
+So if you added a new file _test.go, you will see a special icon for it only after you reload the window. Of course you can do it via interface or command `> Developer: Reload Wiindow`
 
 ### Font
 

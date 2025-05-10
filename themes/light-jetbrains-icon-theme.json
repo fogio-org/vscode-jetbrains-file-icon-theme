@@ -1,6 +1,5 @@
 {
     "iconDefinitions": {
-        // folders
         "folder_android_light": {
             "iconPath": "./icons/folder/folder_android_light.svg"
         },
@@ -67,9 +66,6 @@
         "folder_idea_light": {
             "iconPath": "./icons/folder/folder_idea_light.svg"
         },
-
-        // files
-
         "file_text_light": {
             "iconPath": "./icons/file/text.svg"
         },
@@ -372,6 +368,9 @@
         },
         "file_go_run_light": {
             "iconPath": "./icons/file/goRunApplication.svg"
+        },
+        "file_go_test_light": {
+            "iconPath": "./icons/file/goTest.svg"
         }
     },
     "file": "file_text_light",

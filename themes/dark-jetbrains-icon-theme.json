@@ -1,6 +1,5 @@
 {
     "iconDefinitions": {
-        // folders
         "folder_android": {
             "iconPath": "./icons/folder/folder_android_dark.svg"
         },
@@ -67,9 +66,6 @@
         "folder_idea": {
             "iconPath": "./icons/folder/folder_idea_dark.svg"
         },
-
-        // files
-
         "file_text": {
             "iconPath": "./icons/file/text_dark.svg"
         },
@@ -375,6 +371,9 @@
         },
         "file_go_run": {
             "iconPath": "./icons/file/goRunApplication_dark.svg"
+        },
+        "file_go_test": {
+            "iconPath": "./icons/file/goTest_dark.svg"
         }
     },
     "file": "file_text",
