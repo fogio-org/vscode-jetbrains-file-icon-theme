@@ -67,6 +67,28 @@
         "label": "| Light | JetBrains New UI File Icon Theme",
         "path": "./themes/light-jetbrains-icon-theme.json"
       }
+    ],
+    "configuration": {
+      "title": "JetBrains File Icon Theme",
+      "properties": {
+        "jetbrains-file-icon-theme.enableGoTestIcons": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable special icons for Go test files (*_test.go)"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "jetbrains-file-icon-theme.updateGoTestIcons",
+        "title": "Update Go Test Icons"
+      }
     ]
-  }
+  },
+  "activationEvents": [
+    "onStartupFinished",
+    "onCommand:jetbrains-file-icon-theme.updateGoTestIcons",
+    "onLanguage:go"
+  ],
+  "main": "./src/extension.js"
 }

@@ -1,6 +1,5 @@
 {
     "iconDefinitions": {
-        // Dark
         "folder_android": {
             "iconPath": "./icons/folder/folder_android_dark.svg"
         },
@@ -373,7 +372,9 @@
         "file_go_run": {
             "iconPath": "./icons/file/goRunApplication_dark.svg"
         },
-        // Light
+        "file_go_test": {
+            "iconPath": "./icons/file/goTest_dark.svg"
+        },
         "folder_android_light": {
             "iconPath": "./icons/folder/folder_android_light.svg"
         },
@@ -742,6 +743,9 @@
         },
         "file_go_run_light": {
             "iconPath": "./icons/file/goRunApplication.svg"
+        },
+        "file_go_test_light": {
+            "iconPath": "./icons/file/goTest.svg"
         }
     },
     "file": "file_text",
@@ -1238,7 +1242,7 @@
             "pdf": "file_pdf_light",
             "gohtml": "file_go_template_light",
             "gotmpl": "file_go_template_light"
-        },
+        }
     },
     "fonts": [
         {
