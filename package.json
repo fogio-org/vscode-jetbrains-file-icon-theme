@@ -74,14 +74,14 @@
         "jetbrains-file-icon-theme.enableGoTestIcons": {
           "type": "boolean",
           "default": false,
-          "description": "Enable special icons for Go test files (*_test.go)"
+          "description": "Experimental: Enable special icons for Go test files (*_test.go)"
         }
       }
     },
     "commands": [
       {
         "command": "jetbrains-file-icon-theme.updateGoTestIcons",
-        "title": "Update Go Test Icons"
+        "title": "Update Go Test Icons (experimental)"
       }
     ]
   },

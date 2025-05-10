@@ -36,22 +36,32 @@ class GoTestIconsPlugin {
     updateGoTestIcons() {
         const config = vscode.workspace.getConfiguration('jetbrains-file-icon-theme');
         const enableGoTestIcons = config.get('enableGoTestIcons', false);
-
+        
         this.outputChannel.appendLine(`Go Test Icons enabled: ${enableGoTestIcons}`);
-
-        if (!enableGoTestIcons) {
-            return;
-        }
 
         // Получаем все файлы в рабочей области
         vscode.workspace.findFiles('**/*_test.go').then(files => {
             this.outputChannel.appendLine(`Found ${files.length} test files`);
-            files.forEach(file => {
-                const fileName = path.basename(file.fsPath);
-                this.outputChannel.appendLine(`Processing file: ${fileName}`);
-                // Добавляем файл в конфигурацию иконок
-                this.addFileToIconTheme(fileName);
-            });
+            
+            // Получаем пути к файлам тем
+            const themePath = path.join(vscode.extensions.getExtension('fogio.jetbrains-file-icon-theme').extensionPath, 'themes');
+            const darkThemePath = path.join(themePath, 'dark-jetbrains-icon-theme.json');
+            const lightThemePath = path.join(themePath, 'light-jetbrains-icon-theme.json');
+            const autoThemePath = path.join(themePath, 'auto-jetbrains-icon-theme.json');
+
+            if (enableGoTestIcons) {
+                // Добавляем иконки для тестовых файлов
+                files.forEach(file => {
+                    const fileName = path.basename(file.fsPath);
+                    this.outputChannel.appendLine(`Processing file: ${fileName}`);
+                    this.addFileToIconTheme(fileName);
+                });
+            } else {
+                // Удаляем иконки для тестовых файлов
+                this.removeTestIconsFromTheme(darkThemePath, 'dark');
+                this.removeTestIconsFromTheme(lightThemePath, 'light');
+                this.removeTestIconsFromTheme(autoThemePath, 'auto');
+            }
         });
     }
 
@@ -116,6 +126,49 @@ class GoTestIconsPlugin {
             }
         } catch (error) {
             this.outputChannel.appendLine(`Error updating theme file ${themePath}: ${error.message}`);
+        }
+    }
+
+    removeTestIconsFromTheme(themePath, themeType) {
+        try {
+            // Читаем файл темы
+            const themeContent = fs.readFileSync(themePath, 'utf8');
+            let theme;
+            try {
+                theme = JSON.parse(themeContent);
+            } catch (parseError) {
+                this.outputChannel.appendLine(`Error parsing theme file ${themePath}: ${parseError.message}`);
+                return;
+            }
+
+            // Удаляем тестовые файлы из fileNames
+            if (theme.fileNames) {
+                Object.keys(theme.fileNames).forEach(fileName => {
+                    if (fileName.endsWith('_test.go')) {
+                        delete theme.fileNames[fileName];
+                    }
+                });
+            }
+
+            // Для auto темы также удаляем из light.fileNames
+            if (themeType === 'auto' && theme.light && theme.light.fileNames) {
+                Object.keys(theme.light.fileNames).forEach(fileName => {
+                    if (fileName.endsWith('_test.go')) {
+                        delete theme.light.fileNames[fileName];
+                    }
+                });
+            }
+
+            // Сохраняем обновленную тему
+            try {
+                const updatedContent = JSON.stringify(theme, null, 4);
+                fs.writeFileSync(themePath, updatedContent, 'utf8');
+                this.outputChannel.appendLine(`Removed test icons from theme file: ${themePath}`);
+            } catch (writeError) {
+                this.outputChannel.appendLine(`Error writing theme file ${themePath}: ${writeError.message}`);
+            }
+        } catch (error) {
+            this.outputChannel.appendLine(`Error removing test icons from theme file ${themePath}: ${error.message}`);
         }
     }
 
