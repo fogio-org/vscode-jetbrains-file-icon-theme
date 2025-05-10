@@ -29,8 +29,50 @@ class GoTestIconsPlugin {
             })
         );
 
+        // Подписываемся на события файловой системы
+        context.subscriptions.push(
+            vscode.workspace.onDidCreateFiles(e => {
+                this.outputChannel.appendLine('Files created');
+                this.handleFileSystemEvent(e.files);
+            }),
+            vscode.workspace.onDidDeleteFiles(e => {
+                this.outputChannel.appendLine('Files deleted');
+                this.handleFileSystemEvent(e.files);
+            }),
+            vscode.workspace.onDidRenameFiles(e => {
+                this.outputChannel.appendLine('Files renamed');
+                // Обрабатываем как старые, так и новые пути
+                const allFiles = [...e.files.map(f => f.oldUri), ...e.files.map(f => f.newUri)];
+                this.handleFileSystemEvent(allFiles);
+            })
+        );
+
         // Инициализируем иконки при активации
         this.updateGoTestIcons();
+    }
+
+    handleFileSystemEvent(files) {
+        const config = vscode.workspace.getConfiguration('jetbrains-file-icon-theme');
+        const enableGoTestIcons = config.get('enableGoTestIcons', false);
+        
+        if (!enableGoTestIcons) {
+            return;
+        }
+
+        // Фильтруем только Go тестовые файлы
+        const testFiles = files.filter(file => {
+            const fileName = path.basename(file.fsPath);
+            return fileName.endsWith('_test.go');
+        });
+
+        if (testFiles.length > 0) {
+            this.outputChannel.appendLine(`Processing ${testFiles.length} test files from file system event`);
+            testFiles.forEach(file => {
+                const fileName = path.basename(file.fsPath);
+                this.outputChannel.appendLine(`Processing file: ${fileName}`);
+                this.addFileToIconTheme(fileName);
+            });
+        }
     }
 
     updateGoTestIcons() {
