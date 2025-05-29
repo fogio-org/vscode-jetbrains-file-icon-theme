@@ -11,6 +11,17 @@ The goal of the JetBrains New UI File Icon Theme Extended is to reduce visual cl
 
 I hope this theme will be the one you enjoy working with day and night.
 
+---
+
+Check out our compatible extensions
+
+| <img src="https://raw.githubusercontent.com/fogio-org/vscode-jetbrains-file-icon-theme/refs/heads/master/assets/img/icon.png" width="75"> | <img src="https://raw.githubusercontent.com/fogio-org/vscode-jetbrains-product-icon-theme/refs/heads/master/assets/img/icon.png" width="75"> | <img src="https://raw.githubusercontent.com/fogio-org/vscode-jetbrains-color-theme/refs/heads/master/assets/img/icon.png" width="75"> |
+| :---: | :---: | :---: |
+| JetBrains New UI<br>**File Icon Theme** | JetBrains New UI<br>**Product Icon Theme** | JetBrains New UI<br>**Color Theme** |
+| You are here | [Install](https://marketplace.visualstudio.com/items?itemName=fogio.jetbrains-product-icon-theme) | [Install](https://marketplace.visualstudio.com/items?itemName=fogio.jetbrains-color-theme) |
+
+---
+
 ## Preview
 
 ### Folders icons
@@ -59,7 +70,7 @@ or settings.json file:
 
 After enabling this setting, the theme begins to automatically add *_test.go files with a special icon. However, due to vscode limitations, the icons are cached and to see the special icon you need to restart ide. We decided not to add automatic restart in order not to cause inconvenience to users.
 
-So if you added a new file _test.go, you will see a special icon for it only after you reload the window. Of course you can do it via interface or command `> Developer: Reload Wiindow`
+So if you added a new file _test.go, you will see a special icon for it only after you reload the window. Of course you can do it via interface or command `> Developer: Reload Window`
 
 ### Font
 
