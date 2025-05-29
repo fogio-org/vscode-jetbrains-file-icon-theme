@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.2.1
+
+- Add compatible extensions list to readme
+- Correct typo in readme
+
 ## 1.2.0
 
 - Add support for go test custom icon (*_test.go)
