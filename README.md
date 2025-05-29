@@ -59,7 +59,7 @@ or settings.json file:
 
 After enabling this setting, the theme begins to automatically add *_test.go files with a special icon. However, due to vscode limitations, the icons are cached and to see the special icon you need to restart ide. We decided not to add automatic restart in order not to cause inconvenience to users.
 
-So if you added a new file _test.go, you will see a special icon for it only after you reload the window. Of course you can do it via interface or command `> Developer: Reload Wiindow`
+So if you added a new file _test.go, you will see a special icon for it only after you reload the window. Of course you can do it via interface or command `> Developer: Reload Window`
 
 ### Font
 
