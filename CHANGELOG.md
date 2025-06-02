@@ -3,6 +3,7 @@
 ## 1.3.0
 
 - Add Jenkinsfile icon
+- Add Groovy icon
 
 ## 1.2.1
 

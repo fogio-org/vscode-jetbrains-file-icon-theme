@@ -378,6 +378,9 @@
         "file_jenkins": {
             "iconPath": "./icons/file/jenkins.svg"
         },
+        "file_groovy": {
+            "iconPath": "./icons/file/groovy_dark.svg"
+        },
         "folder_android_light": {
             "iconPath": "./icons/folder/folder_android_light.svg"
         },
@@ -749,6 +752,9 @@
         },
         "file_go_test_light": {
             "iconPath": "./icons/file/goTest.svg"
+        },
+        "file_groovy_light": {
+            "iconPath": "./icons/file/groovy.svg"
         }
     },
     "file": "file_text",
@@ -997,7 +1003,8 @@
         "cmake": "file_cmake",
         "pdf": "file_pdf",
         "gohtml": "file_go_template",
-        "gotmpl": "file_go_template"
+        "gotmpl": "file_go_template",
+        "groovy": "file_groovy"
     },
     "light": {
         "file": "file_text_light",
@@ -1246,7 +1253,8 @@
             "cmake": "file_cmake_light",
             "pdf": "file_pdf_light",
             "gohtml": "file_go_template_light",
-            "gotmpl": "file_go_template_light"
+            "gotmpl": "file_go_template_light",
+            "groovy": "file_groovy_light"
         }
     },
     "fonts": [

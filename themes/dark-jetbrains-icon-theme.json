@@ -377,6 +377,9 @@
         },
         "file_jenkins": {
             "iconPath": "./icons/file/jenkins.svg"
+        },
+        "file_groovy": {
+            "iconPath": "./icons/file/groovy_dark.svg"
         }
     },
     "file": "file_text",
@@ -625,7 +628,8 @@
         "cmake": "file_cmake",
         "pdf": "file_pdf",
         "gohtml": "file_go_template",
-        "gotmpl": "file_go_template"
+        "gotmpl": "file_go_template",
+        "groovy": "file_groovy"
     },
     "fonts": [
         {
