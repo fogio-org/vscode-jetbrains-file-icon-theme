@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.3.0
+
+- Add Jenkinsfile icon
+- Add Groovy icon
+
 ## 1.2.1
 
 - Add compatible extensions list to readme

@@ -375,6 +375,12 @@
         "file_go_test": {
             "iconPath": "./icons/file/goTest_dark.svg"
         },
+        "file_jenkins": {
+            "iconPath": "./icons/file/jenkins.svg"
+        },
+        "file_groovy": {
+            "iconPath": "./icons/file/groovy_dark.svg"
+        },
         "folder_android_light": {
             "iconPath": "./icons/folder/folder_android_light.svg"
         },
@@ -746,6 +752,9 @@
         },
         "file_go_test_light": {
             "iconPath": "./icons/file/goTest.svg"
+        },
+        "file_groovy_light": {
+            "iconPath": "./icons/file/groovy.svg"
         }
     },
     "file": "file_text",
@@ -848,7 +857,8 @@
         "Directory.Build.props": "file_buildprops",
         "main.go": "file_go_run",
         "conftest.py": "file_python_tests",
-        "__init__.py": "file_python_console"
+        "__init__.py": "file_python_console",
+        "Jenkinsfile": "file_jenkins"
     },
     "fileExtensions": {
         "ml": "file_ml",
@@ -993,7 +1003,8 @@
         "cmake": "file_cmake",
         "pdf": "file_pdf",
         "gohtml": "file_go_template",
-        "gotmpl": "file_go_template"
+        "gotmpl": "file_go_template",
+        "groovy": "file_groovy"
     },
     "light": {
         "file": "file_text_light",
@@ -1096,7 +1107,8 @@
             "Directory.Build.props": "file_buildprops_light",
             "main.go": "file_go_run_light",
             "conftest.py": "file_python_tests_light",
-            "__init__.py": "file_python_console_light"
+            "__init__.py": "file_python_console_light",
+            "Jenkinsfile": "file_jenkins"
         },
         "fileExtensions": {
             "ml": "file_ml_light",
@@ -1241,7 +1253,8 @@
             "cmake": "file_cmake_light",
             "pdf": "file_pdf_light",
             "gohtml": "file_go_template_light",
-            "gotmpl": "file_go_template_light"
+            "gotmpl": "file_go_template_light",
+            "groovy": "file_groovy_light"
         }
     },
     "fonts": [
