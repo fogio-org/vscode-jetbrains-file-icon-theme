@@ -374,6 +374,9 @@
         },
         "file_go_test": {
             "iconPath": "./icons/file/goTest_dark.svg"
+        },
+        "file_jenkins": {
+            "iconPath": "./icons/file/jenkins.svg"
         }
     },
     "file": "file_text",
@@ -476,7 +479,8 @@
         "Directory.Build.props": "file_buildprops",
         "main.go": "file_go_run",
         "conftest.py": "file_python_tests",
-        "__init__.py": "file_python_console"
+        "__init__.py": "file_python_console",
+        "Jenkinsfile": "file_jenkins"
     },
     "fileExtensions": {
         "ml": "file_ml",

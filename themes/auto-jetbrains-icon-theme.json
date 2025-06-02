@@ -375,6 +375,9 @@
         "file_go_test": {
             "iconPath": "./icons/file/goTest_dark.svg"
         },
+        "file_jenkins": {
+            "iconPath": "./icons/file/jenkins.svg"
+        },
         "folder_android_light": {
             "iconPath": "./icons/folder/folder_android_light.svg"
         },
@@ -848,7 +851,8 @@
         "Directory.Build.props": "file_buildprops",
         "main.go": "file_go_run",
         "conftest.py": "file_python_tests",
-        "__init__.py": "file_python_console"
+        "__init__.py": "file_python_console",
+        "Jenkinsfile": "file_jenkins"
     },
     "fileExtensions": {
         "ml": "file_ml",
@@ -1096,7 +1100,8 @@
             "Directory.Build.props": "file_buildprops_light",
             "main.go": "file_go_run_light",
             "conftest.py": "file_python_tests_light",
-            "__init__.py": "file_python_console_light"
+            "__init__.py": "file_python_console_light",
+            "Jenkinsfile": "file_jenkins"
         },
         "fileExtensions": {
             "ml": "file_ml_light",

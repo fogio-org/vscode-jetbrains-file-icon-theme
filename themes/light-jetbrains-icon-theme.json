@@ -371,6 +371,9 @@
         },
         "file_go_test_light": {
             "iconPath": "./icons/file/goTest.svg"
+        },
+        "file_jenkins": {
+            "iconPath": "./icons/file/jenkins.svg"
         }
     },
     "file": "file_text_light",
@@ -473,7 +476,8 @@
         "Directory.Build.props": "file_buildprops_light",
         "main.go": "file_go_run_light",
         "conftest.py": "file_python_tests_light",
-        "__init__.py": "file_python_console_light"
+        "__init__.py": "file_python_console_light",
+        "Jenkinsfile": "file_jenkins"
     },
     "fileExtensions": {
         "ml": "file_ml_light",
