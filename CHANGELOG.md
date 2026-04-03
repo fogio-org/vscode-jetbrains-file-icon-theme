@@ -3,6 +3,7 @@
 ## 1.4.0
 
 - Add bpmn file icon
+- Add arb file icon
 
 ## 1.3.1
 

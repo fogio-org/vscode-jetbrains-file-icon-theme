@@ -634,7 +634,8 @@
         "gohtml": "file_go_template",
         "gotmpl": "file_go_template",
         "groovy": "file_groovy",
-        "bpmn": "file_schema"
+        "bpmn": "file_schema",
+        "arb": "file_json"
     },
     "fonts": [
         {

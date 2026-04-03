@@ -1012,7 +1012,8 @@
         "gohtml": "file_go_template",
         "gotmpl": "file_go_template",
         "groovy": "file_groovy",
-        "bpmn": "file_schema"
+        "bpmn": "file_schema",
+        "arb": "file_json"
     },
     "light": {
         "file": "file_text_light",
@@ -1264,7 +1265,8 @@
             "gohtml": "file_go_template_light",
             "gotmpl": "file_go_template_light",
             "groovy": "file_groovy_light",
-            "bpmn": "file_schema_light"
+            "bpmn": "file_schema_light",
+            "arb": "file_json_light"
         }
     },
     "fonts": [
