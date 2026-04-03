@@ -380,6 +380,9 @@
         },
         "file_groovy": {
             "iconPath": "./icons/file/groovy_dark.svg"
+        },
+        "file_schema": {
+            "iconPath": "./icons/file/schema_dark.svg"
         }
     },
     "file": "file_text",
@@ -630,7 +633,8 @@
         "pdf": "file_pdf",
         "gohtml": "file_go_template",
         "gotmpl": "file_go_template",
-        "groovy": "file_groovy"
+        "groovy": "file_groovy",
+        "bpmn": "file_schema"
     },
     "fonts": [
         {

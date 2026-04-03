@@ -381,6 +381,9 @@
         "file_groovy": {
             "iconPath": "./icons/file/groovy_dark.svg"
         },
+        "file_schema": {
+            "iconPath": "./icons/file/schema_dark.svg"
+        },
         "folder_android_light": {
             "iconPath": "./icons/folder/folder_android_light.svg"
         },
@@ -755,7 +758,10 @@
         },
         "file_groovy_light": {
             "iconPath": "./icons/file/groovy.svg"
-        }
+        },
+        "file_schema_light": {
+            "iconPath": "./icons/file/schema.svg"
+        },
     },
     "file": "file_text",
     "folder": "folder",
@@ -1005,7 +1011,8 @@
         "pdf": "file_pdf",
         "gohtml": "file_go_template",
         "gotmpl": "file_go_template",
-        "groovy": "file_groovy"
+        "groovy": "file_groovy",
+        "bpmn": "file_schema"
     },
     "light": {
         "file": "file_text_light",
@@ -1256,7 +1263,8 @@
             "pdf": "file_pdf_light",
             "gohtml": "file_go_template_light",
             "gotmpl": "file_go_template_light",
-            "groovy": "file_groovy_light"
+            "groovy": "file_groovy_light",
+            "bpmn": "file_schema_light"
         }
     },
     "fonts": [

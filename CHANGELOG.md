@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.4.0
+
+- Add bpmn file icon
+
 ## 1.3.1
 
 - Fix .env files icons
