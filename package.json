@@ -90,5 +90,14 @@
     "onCommand:jetbrains-file-icon-theme.updateGoTestIcons",
     "onLanguage:go"
   ],
-  "main": "./src/extension.js"
+  "main": "./src/extension.js",
+  "scripts": {
+    "validate:manifest": "node scripts/validate-manifest.js",
+    "validate": "node scripts/validate-icon-themes.js",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.0.0"
+  }
 }

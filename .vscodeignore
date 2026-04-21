@@ -1,6 +1,11 @@
 .vscode/**
 .vscode-test/**
 .gitignore
+.github/**
 assets/doc/**
 assets/examples/**
+coverage/**
 scripts/**
+node_modules/**
+*.vsix
+package-lock.json

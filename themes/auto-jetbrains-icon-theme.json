@@ -761,7 +761,7 @@
         },
         "file_schema_light": {
             "iconPath": "./icons/file/schema.svg"
-        },
+        }
     },
     "file": "file_text",
     "folder": "folder",
