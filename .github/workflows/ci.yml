@@ -1,0 +1,150 @@
+name: CI
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install --no-audit --no-fund
+
+      - name: Validate extension manifest
+        id: manifest
+        continue-on-error: true
+        run: npm run validate:manifest > manifest.log 2>&1
+
+      - name: Validate icon themes
+        id: icon-themes
+        continue-on-error: true
+        run: npm run validate > validate.log 2>&1
+
+      - name: Build VSIX (smoke test)
+        id: package
+        continue-on-error: true
+        if: ${{ steps.manifest.outcome == 'success' && steps.icon-themes.outcome == 'success' }}
+        run: npx --yes @vscode/vsce package --no-dependencies --out theme.vsix > package.log 2>&1
+
+      - uses: actions/upload-artifact@v4
+        if: ${{ steps.package.outcome == 'success' }}
+        with:
+          name: theme-vsix
+          path: theme.vsix
+
+      - name: Check notification credentials
+        id: secrets-check
+        if: github.event_name == 'pull_request'
+        env:
+          FOGIO_BOT_APP_ID: ${{ secrets.FOGIO_BOT_APP_ID }}
+          FOGIO_BOT_PRIVATE_KEY: ${{ secrets.FOGIO_BOT_PRIVATE_KEY }}
+        run: |
+          if [ -n "$FOGIO_BOT_APP_ID" ] && [ -n "$FOGIO_BOT_PRIVATE_KEY" ]; then
+            echo "has_fogio_bot=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_fogio_bot=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Generate fogio-ci bot token
+        id: bot-token
+        continue-on-error: true
+        if: ${{ github.event_name == 'pull_request' && steps.secrets-check.outputs.has_fogio_bot == 'true' }}
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.FOGIO_BOT_APP_ID }}
+          private-key: ${{ secrets.FOGIO_BOT_PRIVATE_KEY }}
+
+      - name: Prepare PR comment body
+        if: github.event_name == 'pull_request'
+        env:
+          MANIFEST_OUTCOME: ${{ steps.manifest.outcome }}
+          ICON_THEMES_OUTCOME: ${{ steps.icon-themes.outcome }}
+          PACKAGE_OUTCOME: ${{ steps.package.outcome }}
+        run: |
+          status_icon() {
+            if [ "$1" = "success" ]; then
+              printf '✅'
+            else
+              printf '❌'
+            fi
+          }
+
+          trim_log() {
+            local file="$1"
+            if [ -f "$file" ]; then
+              tail -n 40 "$file" | sed 's/\r$//'
+            else
+              echo "No output captured."
+            fi
+          }
+
+          {
+            if [ "$MANIFEST_OUTCOME" = "success" ] && \
+               [ "$ICON_THEMES_OUTCOME" = "success" ] && \
+               [ "$PACKAGE_OUTCOME" = "success" ]; then
+              echo "### ✅ CI passed"
+            else
+              echo "### ❌ CI failed"
+            fi
+            echo
+            echo "- Manifest validation: \`$(status_icon "$MANIFEST_OUTCOME") ${MANIFEST_OUTCOME}\`"
+            echo "- Icon theme validation: \`$(status_icon "$ICON_THEMES_OUTCOME") ${ICON_THEMES_OUTCOME}\`"
+            echo "- VSIX smoke test: \`$(status_icon "$PACKAGE_OUTCOME") ${PACKAGE_OUTCOME}\`"
+            echo
+            echo "Workflow run: [\`${GITHUB_RUN_ID}\`](${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID})"
+            echo
+            echo "<details><summary>Manifest validation output</summary>"
+            echo
+            echo '```text'
+            trim_log manifest.log
+            echo '```'
+            echo
+            echo "</details>"
+            echo
+            echo "<details><summary>Icon theme validation output</summary>"
+            echo
+            echo '```text'
+            trim_log validate.log
+            echo '```'
+            echo
+            echo "</details>"
+            echo
+            echo "<details><summary>VSIX smoke test output</summary>"
+            echo
+            echo '```text'
+            trim_log package.log
+            echo '```'
+            echo
+            echo "</details>"
+          } > comment.md
+
+      - name: Post PR comment
+        if: ${{ github.event_name == 'pull_request' && steps.bot-token.outputs.token != '' }}
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          GITHUB_TOKEN: ${{ steps.bot-token.outputs.token }}
+          header: ci-validate
+          path: comment.md
+
+      - name: Approve PR on success
+        if: ${{ github.event_name == 'pull_request' && steps.bot-token.outputs.token != '' && steps.manifest.outcome == 'success' && steps.icon-themes.outcome == 'success' && steps.package.outcome == 'success' }}
+        env:
+          GH_TOKEN: ${{ steps.bot-token.outputs.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
+        run: |
+          gh pr review "$PR_NUMBER" \
+            --repo "$REPO" \
+            --approve \
+            --body "Automated approval — CI validation passed."
+
+      - name: Fail workflow if validation failed
+        if: ${{ steps.manifest.outcome != 'success' || steps.icon-themes.outcome != 'success' || steps.package.outcome != 'success' }}
+        run: exit 1
