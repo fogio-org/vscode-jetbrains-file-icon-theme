@@ -1,1 +1,17 @@
 *.vsix
+
+# Coverage files (added by CoverLens)
+lcov.info
+coverage/
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.DS_Store
+Thumbs.db
+
+*.log
+.env
+.env.local

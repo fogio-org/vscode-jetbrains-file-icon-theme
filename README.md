@@ -2,12 +2,19 @@
 
 The goal of the JetBrains New UI File Icon Theme Extended is to reduce visual clutter and give you more space for your code and thoughts.
 
-<p align="center">
-    <a href="https://marketplace.visualstudio.com/items?itemName=fogio.jetbrains-file-icon-theme"><img src="https://img.shields.io/visual-studio-marketplace/v/fogio.jetbrains-file-icon-theme?style=for-the-badge&colorA=555555&colorB=007ec6&label=VERSION" alt="Version"></a>&nbsp;
-    <a href="https://marketplace.visualstudio.com/items?itemName=fogio.jetbrains-file-icon-theme"><img src="https://img.shields.io/visual-studio-marketplace/r/fogio.jetbrains-file-icon-theme?style=for-the-badge&colorA=555555&colorB=007ec6&label=RATING" alt="Rating"></a>&nbsp;
-    <a href="https://marketplace.visualstudio.com/items?itemName=fogio.jetbrains-file-icon-theme"><img src="https://img.shields.io/visual-studio-marketplace/i/fogio.jetbrains-file-icon-theme?style=for-the-badge&colorA=555555&colorB=007ec6&label=Installs" alt="INSTALLS"></a>&nbsp;
-    <a href="https://marketplace.visualstudio.com/items?itemName=fogio.jetbrains-file-icon-theme"><img src="https://img.shields.io/visual-studio-marketplace/d/fogio.jetbrains-file-icon-theme?style=for-the-badge&colorA=555555&colorB=007ec6&label=Downloads" alt="DOWNLOADS"></a>
-</p>
+[VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=fogio.jetbrains-file-icon-theme):
+
+![VS Code Marketplace Version](https://vsmarketplacebadges.dev/version-short/fogio.jetbrains-file-icon-theme.svg?style=for-the-badge&colorA=555555&colorB=007ec6&label=VERSION)&nbsp;
+![VS Code Marketplace Rating](https://vsmarketplacebadges.dev/rating-short/fogio.jetbrains-file-icon-theme.svg?style=for-the-badge&colorA=555555&colorB=007ec6&label=RATING)&nbsp;
+![VS Code Marketplace Downloads](https://vsmarketplacebadges.dev/downloads-short/fogio.jetbrains-file-icon-theme.svg?style=for-the-badge&colorA=555555&colorB=007ec6&label=DOWNLOADS)&nbsp;
+![VS Code Marketplace Installs](https://vsmarketplacebadges.dev/installs-short/fogio.jetbrains-file-icon-theme.svg?style=for-the-badge&colorA=555555&colorB=007ec6&label=INSTALLS)
+
+[Open VSX](https://open-vsx.org/extension/fogio/jetbrains-file-icon-theme):
+
+![Open VSX Version](https://img.shields.io/open-vsx/v/fogio/jetbrains-file-icon-theme?style=for-the-badge&color=%23c260ef&label=VERSION)&nbsp;
+![Open VSX Rating](https://img.shields.io/open-vsx/rating/fogio/jetbrains-file-icon-theme?style=for-the-badge&color=%23c260ef&label=RATING)&nbsp;
+![Open VSX Downloads](https://img.shields.io/open-vsx/dt/fogio/jetbrains-file-icon-theme?style=for-the-badge&color=%23c260ef&label=DOWNLOADS)&nbsp;
+![Open VSX Release Date](https://img.shields.io/open-vsx/release-date/fogio/jetbrains-file-icon-theme?style=for-the-badge&color=%23c260ef&label=RELEASE%20DATE)
 
 I hope this theme will be the one you enjoy working with day and night.
 
