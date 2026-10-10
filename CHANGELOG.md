@@ -1,5 +1,12 @@
 # Change Log
 
+## 1.8.0
+
+- Map .codex, .gitee, .run, and .mvn in the auto, dark, and light themes.
+- Add JetBrains Maven Module folder icons for light and dark themes and use them for .mvn.
+
+#17 by St0ff3l
+
 ## 1.7.0
 
 - Add dedicated icon for npm files (`package.json`, `.npmrc`, `package-lock.json`, `npm-shrinkwrap.json`, `.npmignore`)
