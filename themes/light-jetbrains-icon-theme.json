@@ -51,6 +51,9 @@
         "folder_settings_light": {
             "iconPath": "./icons/folder/folder_settings_light.svg"
         },
+        "folder_maven_light": {
+            "iconPath": "./icons/folder/folder_maven_light.svg"
+        },
         "folder_test_light": {
             "iconPath": "./icons/folder/folder_test_light.svg"
         },
@@ -415,6 +418,7 @@
         "resources": "folder_resources_light",
         "scripts": "folder_run_light",
         "run": "folder_run_light",
+        ".run": "folder_run_light",
         "server": "folder_server_light",
         "config": "folder_settings_light",
         "configs": "folder_settings_light",
@@ -433,10 +437,13 @@
         ".github": "folder_github_light",
         "github": "folder_github_light",
         ".gitlab": "folder_git_light",
+        ".gitee": "folder_git_light",
+        ".mvn": "folder_maven_light",
         "templates": "folder_templates_light",
         ".idea": "folder_idea_light",
         ".vscode": "folder_idea_light",
         ".agents": "folder_idea_light",
+        ".codex": "folder_idea_light",
         ".antigravitycli": "folder_idea_light",
         ".antigravity": "folder_idea_light",
         ".claude": "folder_idea_light",

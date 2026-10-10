@@ -51,6 +51,9 @@
         "folder_settings": {
             "iconPath": "./icons/folder/folder_settings_dark.svg"
         },
+        "folder_maven": {
+            "iconPath": "./icons/folder/folder_maven_dark.svg"
+        },
         "folder_test": {
             "iconPath": "./icons/folder/folder_test_dark.svg"
         },
@@ -418,6 +421,7 @@
         "resources": "folder_resources",
         "scripts": "folder_run",
         "run": "folder_run",
+        ".run": "folder_run",
         "server": "folder_server",
         "config": "folder_settings",
         "configs": "folder_settings",
@@ -436,10 +440,13 @@
         ".github": "folder_github",
         "github": "folder_github",
         ".gitlab": "folder_git",
+        ".gitee": "folder_git",
+        ".mvn": "folder_maven",
         "templates": "folder_templates",
         ".idea": "folder_idea",
         ".vscode": "folder_idea",
         ".agents": "folder_idea",
+        ".codex": "folder_idea",
         ".antigravitycli": "folder_idea",
         ".antigravity": "folder_idea",
         ".claude": "folder_idea",

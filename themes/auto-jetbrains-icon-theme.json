@@ -51,6 +51,9 @@
         "folder_settings": {
             "iconPath": "./icons/folder/folder_settings_dark.svg"
         },
+        "folder_maven": {
+            "iconPath": "./icons/folder/folder_maven_dark.svg"
+        },
         "folder_test": {
             "iconPath": "./icons/folder/folder_test_dark.svg"
         },
@@ -450,6 +453,9 @@
         "folder_settings_light": {
             "iconPath": "./icons/folder/folder_settings_light.svg"
         },
+        "folder_maven_light": {
+            "iconPath": "./icons/folder/folder_maven_light.svg"
+        },
         "folder_test_light": {
             "iconPath": "./icons/folder/folder_test_light.svg"
         },
@@ -811,6 +817,7 @@
         "resources": "folder_resources",
         "scripts": "folder_run",
         "run": "folder_run",
+        ".run": "folder_run",
         "server": "folder_server",
         "config": "folder_settings",
         "configs": "folder_settings",
@@ -829,10 +836,13 @@
         ".github": "folder_github",
         "github": "folder_github",
         ".gitlab": "folder_git",
+        ".gitee": "folder_git",
+        ".mvn": "folder_maven",
         "templates": "folder_templates",
         ".idea": "folder_idea",
         ".vscode": "folder_idea",
         ".agents": "folder_idea",
+        ".codex": "folder_idea",
         ".antigravitycli": "folder_idea",
         ".antigravity": "folder_idea",
         ".claude": "folder_idea",
@@ -1116,6 +1126,7 @@
             "resources": "folder_resources_light",
             "scripts": "folder_run_light",
             "run": "folder_run_light",
+            ".run": "folder_run_light",
             "server": "folder_server_light",
             "config": "folder_settings_light",
             "configs": "folder_settings_light",
@@ -1134,10 +1145,13 @@
             ".github": "folder_github_light",
             "github": "folder_github_light",
             ".gitlab": "folder_git_light",
+            ".gitee": "folder_git_light",
+            ".mvn": "folder_maven_light",
             "templates": "folder_templates_light",
             ".idea": "folder_idea_light",
             ".vscode": "folder_idea_light",
             ".agents": "folder_idea_light",
+            ".codex": "folder_idea_light",
             ".antigravitycli": "folder_idea_light",
             ".antigravity": "folder_idea_light",
             ".claude": "folder_idea_light",
