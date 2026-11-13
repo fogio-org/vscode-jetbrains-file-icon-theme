@@ -410,6 +410,78 @@
         },
         "file_schema": {
             "iconPath": "./icons/file/schema_dark.svg"
+        },
+        "file_prettier": {
+            "iconPath": "./icons/file/prettier_dark.svg"
+        },
+        "file_stylelint": {
+            "iconPath": "./icons/file/stylelint_dark.svg"
+        },
+        "file_jshint": {
+            "iconPath": "./icons/file/jsHint_dark.svg"
+        },
+        "file_patch": {
+            "iconPath": "./icons/file/patch_dark.svg"
+        },
+        "file_perl": {
+            "iconPath": "./icons/file/perl_dark.svg"
+        },
+        "file_source_map": {
+            "iconPath": "./icons/file/sourceMap_dark.svg"
+        },
+        "file_json_schema": {
+            "iconPath": "./icons/file/jsonSchema_dark.svg"
+        },
+        "file_xsd": {
+            "iconPath": "./icons/file/xsd_dark.svg"
+        },
+        "file_xhtml": {
+            "iconPath": "./icons/file/xhtml_dark.svg"
+        },
+        "file_wsdl": {
+            "iconPath": "./icons/file/wsdl_dark.svg"
+        },
+        "file_java_class": {
+            "iconPath": "./icons/file/javaClass_dark.svg"
+        },
+        "file_jsp": {
+            "iconPath": "./icons/file/jsp_dark.svg"
+        },
+        "file_jspx": {
+            "iconPath": "./icons/file/jspx_dark.svg"
+        },
+        "file_manifest": {
+            "iconPath": "./icons/file/manifest_dark.svg"
+        },
+        "file_asm": {
+            "iconPath": "./icons/file/asm_dark.svg"
+        },
+        "file_objective_c": {
+            "iconPath": "./icons/file/m_dark.svg"
+        },
+        "file_binary": {
+            "iconPath": "./icons/file/binaryData_dark.svg"
+        },
+        "file_windows": {
+            "iconPath": "./icons/file/microsoftWindows_dark.svg"
+        },
+        "folder_log": {
+            "iconPath": "./icons/folder/folder_log_dark.svg"
+        },
+        "folder_generated": {
+            "iconPath": "./icons/folder/folder_generated_dark.svg"
+        },
+        "folder_resources_root": {
+            "iconPath": "./icons/folder/folder_resources_root_dark.svg"
+        },
+        "folder_test_resources_root": {
+            "iconPath": "./icons/folder/folder_test_resources_root_dark.svg"
+        },
+        "folder_compiled": {
+            "iconPath": "./icons/folder/folder_compiled_dark.svg"
+        },
+        "folder_library": {
+            "iconPath": "./icons/folder/folder_library_dark.svg"
         }
     },
     "file": "file_text",
@@ -419,7 +491,7 @@
         "database": "folder_database",
         "db": "folder_database",
         "docs": "folder_docs",
-        "lib": "folder_framework",
+        "lib": "folder_library",
         "helpers": "folder_helpers",
         "ios": "folder_ios",
         "macos": "folder_ios",
@@ -427,7 +499,7 @@
         "internal": "folder_module",
         "pkg": "folder_package",
         "assets": "folder_resources",
-        "resources": "folder_resources",
+        "resources": "folder_resources_root",
         "scripts": "folder_run",
         "run": "folder_run",
         ".run": "folder_run",
@@ -486,7 +558,7 @@
         "documentation": "folder_docs",
         "source": "folder_source_root",
         "sources": "folder_source_root",
-        "libs": "folder_framework",
+        "libs": "folder_library",
         "helper": "folder_helpers",
         "utils": "folder_helpers",
         "util": "folder_helpers",
@@ -508,7 +580,17 @@
         "dist": "folder_excluded",
         "out": "folder_excluded",
         "target": "folder_excluded",
-        "node_modules": "folder_excluded"
+        "node_modules": "folder_excluded",
+        "logs": "folder_log",
+        "log": "folder_log",
+        "generated": "folder_generated",
+        "gen": "folder_generated",
+        "__generated__": "folder_generated",
+        "fixtures": "folder_test_resources_root",
+        "__fixtures__": "folder_test_resources_root",
+        "classes": "folder_compiled",
+        "framework": "folder_framework",
+        "frameworks": "folder_framework"
     },
     "fileNames": {
         "dune": "file_dune",
@@ -658,7 +740,37 @@
         "LICENCE.txt": "file_license",
         "UNLICENSE": "file_license",
         "Directory.Build.targets": "file_buildprops",
-        "Directory.Packages.props": "file_buildprops"
+        "Directory.Packages.props": "file_buildprops",
+        ".prettierrc": "file_prettier",
+        ".prettierrc.json": "file_prettier",
+        ".prettierrc.json5": "file_prettier",
+        ".prettierrc.yaml": "file_prettier",
+        ".prettierrc.yml": "file_prettier",
+        ".prettierrc.toml": "file_prettier",
+        ".prettierrc.js": "file_prettier",
+        ".prettierrc.cjs": "file_prettier",
+        ".prettierrc.mjs": "file_prettier",
+        ".prettierrc.ts": "file_prettier",
+        ".prettierrc.cts": "file_prettier",
+        ".prettierrc.mts": "file_prettier",
+        "prettier.config.js": "file_prettier",
+        "prettier.config.cjs": "file_prettier",
+        "prettier.config.mjs": "file_prettier",
+        "prettier.config.ts": "file_prettier",
+        "prettier.config.cts": "file_prettier",
+        "prettier.config.mts": "file_prettier",
+        ".stylelintrc": "file_stylelint",
+        ".stylelintrc.json": "file_stylelint",
+        ".stylelintrc.yaml": "file_stylelint",
+        ".stylelintrc.yml": "file_stylelint",
+        ".stylelintrc.js": "file_stylelint",
+        ".stylelintrc.cjs": "file_stylelint",
+        ".stylelintrc.mjs": "file_stylelint",
+        "stylelint.config.js": "file_stylelint",
+        "stylelint.config.cjs": "file_stylelint",
+        "stylelint.config.mjs": "file_stylelint",
+        ".jshintrc": "file_jshint",
+        "MANIFEST.MF": "file_manifest"
     },
     "fileExtensions": {
         "ml": "file_ml",
@@ -723,7 +835,7 @@
         "sh": "file_shell",
         "zsh": "file_shell",
         "bash": "file_shell",
-        "bat": "file_shell",
+        "bat": "file_windows",
         "ps1": "file_shell",
         "h": "file_h",
         "hh": "file_h",
@@ -827,7 +939,7 @@
         "phar": "file_archive",
         "woff2": "file_font",
         "htm": "file_html",
-        "xhtml": "file_html",
+        "xhtml": "file_xhtml",
         "markdown": "file_markdown",
         "jsonl": "file_json",
         "ndjson": "file_json",
@@ -840,7 +952,7 @@
         "heic": "file_image",
         "fish": "file_shell",
         "ksh": "file_shell",
-        "cmd": "file_shell",
+        "cmd": "file_windows",
         "tgz": "file_archive",
         "bz2": "file_archive",
         "xz": "file_archive",
@@ -850,7 +962,7 @@
         "kts": "file_kotlin",
         "tfvars": "file_terraform",
         "ini": "file_config",
-        "xsd": "file_xml",
+        "xsd": "file_xsd",
         "xsl": "file_xml",
         "xslt": "file_xml",
         "plist": "file_xml",
@@ -868,7 +980,26 @@
         "spec.ts": "file_test_ts",
         "spec.tsx": "file_test_tsx",
         "spec.js": "file_test_js",
-        "spec.jsx": "file_test_jsx"
+        "spec.jsx": "file_test_jsx",
+        "patch": "file_patch",
+        "diff": "file_patch",
+        "pl": "file_perl",
+        "pm": "file_perl",
+        "pod": "file_perl",
+        "map": "file_source_map",
+        "schema.json": "file_json_schema",
+        "wsdl": "file_wsdl",
+        "class": "file_java_class",
+        "jsp": "file_jsp",
+        "jspx": "file_jspx",
+        "asm": "file_asm",
+        "s": "file_asm",
+        "m": "file_objective_c",
+        "mm": "file_objective_c",
+        "bin": "file_binary",
+        "o": "file_binary",
+        "dll": "file_windows",
+        "msi": "file_windows"
     },
     "languageIds": {
         "dotenv": "file_env",
