@@ -959,6 +959,72 @@
         },
         "folder_library_light": {
             "iconPath": "./icons/folder/folder_library_light.svg"
+        },
+        "file_gradle": {
+            "iconPath": "./icons/file/gradle_dark.svg"
+        },
+        "file_cocoapods": {
+            "iconPath": "./icons/file/cocoaPods_dark.svg"
+        },
+        "file_handlebars": {
+            "iconPath": "./icons/file/handlebars_dark.svg"
+        },
+        "file_stylus": {
+            "iconPath": "./icons/file/stylus_dark.svg"
+        },
+        "file_coffeescript": {
+            "iconPath": "./icons/file/coffeescript_dark.svg"
+        },
+        "file_graphql_config": {
+            "iconPath": "./icons/file/graphqlConfig_dark.svg"
+        },
+        "file_meson": {
+            "iconPath": "./icons/file/meson_dark.svg"
+        },
+        "file_clang_format": {
+            "iconPath": "./icons/file/clangFormat_dark.svg"
+        },
+        "file_helm": {
+            "iconPath": "./icons/file/helm_dark.svg"
+        },
+        "file_jest": {
+            "iconPath": "./icons/file/jest.svg"
+        },
+        "file_storybook": {
+            "iconPath": "./icons/file/storybook_dark.svg"
+        },
+        "file_gradle_light": {
+            "iconPath": "./icons/file/gradle.svg"
+        },
+        "file_cocoapods_light": {
+            "iconPath": "./icons/file/cocoaPods.svg"
+        },
+        "file_handlebars_light": {
+            "iconPath": "./icons/file/handlebars.svg"
+        },
+        "file_stylus_light": {
+            "iconPath": "./icons/file/stylus.svg"
+        },
+        "file_coffeescript_light": {
+            "iconPath": "./icons/file/coffeescript.svg"
+        },
+        "file_graphql_config_light": {
+            "iconPath": "./icons/file/graphqlConfig.svg"
+        },
+        "file_meson_light": {
+            "iconPath": "./icons/file/meson.svg"
+        },
+        "file_clang_format_light": {
+            "iconPath": "./icons/file/clangFormat.svg"
+        },
+        "file_helm_light": {
+            "iconPath": "./icons/file/helm.svg"
+        },
+        "file_jest_light": {
+            "iconPath": "./icons/file/jest.svg"
+        },
+        "file_storybook_light": {
+            "iconPath": "./icons/file/storybook.svg"
         }
     },
     "file": "file_text",
@@ -1067,7 +1133,31 @@
         "__fixtures__": "folder_test_resources_root",
         "classes": "folder_compiled",
         "framework": "folder_framework",
-        "frameworks": "folder_framework"
+        "frameworks": "folder_framework",
+        ".next": "folder_excluded",
+        ".nuxt": "folder_excluded",
+        ".svelte-kit": "folder_excluded",
+        ".turbo": "folder_excluded",
+        ".cache": "folder_excluded",
+        "coverage": "folder_excluded",
+        ".venv": "folder_excluded",
+        "venv": "folder_excluded",
+        "__pycache__": "folder_excluded",
+        ".pytest_cache": "folder_excluded",
+        ".mypy_cache": "folder_excluded",
+        ".ruff_cache": "folder_excluded",
+        ".gradle": "folder_excluded",
+        "Pods": "folder_excluded",
+        "DerivedData": "folder_excluded",
+        ".dart_tool": "folder_excluded",
+        ".terraform": "folder_excluded",
+        ".vercel": "folder_excluded",
+        ".netlify": "folder_excluded",
+        "e2e": "folder_test_root",
+        "__mocks__": "folder_test_resources_root",
+        "__snapshots__": "folder_test_resources_root",
+        "public": "folder_resources_root",
+        "static": "folder_resources_root"
     },
     "fileNames": {
         "dune": "file_dune",
@@ -1247,7 +1337,42 @@
         "stylelint.config.cjs": "file_stylelint",
         "stylelint.config.mjs": "file_stylelint",
         ".jshintrc": "file_jshint",
-        "MANIFEST.MF": "file_manifest"
+        "MANIFEST.MF": "file_manifest",
+        "build.gradle": "file_gradle",
+        "settings.gradle": "file_gradle",
+        "gradlew": "file_gradle",
+        "gradlew.bat": "file_gradle",
+        "gradle.properties": "file_gradle",
+        "gradle-wrapper.properties": "file_gradle",
+        "Podfile": "file_cocoapods",
+        "Podfile.lock": "file_cocoapods",
+        ".graphqlrc": "file_graphql_config",
+        ".graphqlrc.json": "file_graphql_config",
+        ".graphqlrc.yaml": "file_graphql_config",
+        ".graphqlrc.yml": "file_graphql_config",
+        ".graphqlrc.js": "file_graphql_config",
+        ".graphqlrc.ts": "file_graphql_config",
+        "graphql.config.js": "file_graphql_config",
+        "graphql.config.cjs": "file_graphql_config",
+        "graphql.config.mjs": "file_graphql_config",
+        "graphql.config.ts": "file_graphql_config",
+        "graphql.config.json": "file_graphql_config",
+        "graphql.config.yaml": "file_graphql_config",
+        "graphql.config.yml": "file_graphql_config",
+        "meson.build": "file_meson",
+        "meson_options.txt": "file_meson",
+        "meson.options": "file_meson",
+        ".clang-format": "file_clang_format",
+        "_clang-format": "file_clang_format",
+        "Chart.yaml": "file_helm",
+        "Chart.lock": "file_helm",
+        "jest.config.js": "file_jest",
+        "jest.config.cjs": "file_jest",
+        "jest.config.mjs": "file_jest",
+        "jest.config.ts": "file_jest",
+        "jest.config.cts": "file_jest",
+        "jest.config.mts": "file_jest",
+        "jest.config.json": "file_jest"
     },
     "fileExtensions": {
         "ml": "file_ml",
@@ -1476,11 +1601,48 @@
         "bin": "file_binary",
         "o": "file_binary",
         "dll": "file_windows",
-        "msi": "file_windows"
+        "msi": "file_windows",
+        "gradle": "file_gradle",
+        "gradle.kts": "file_gradle",
+        "podspec": "file_cocoapods",
+        "styl": "file_stylus",
+        "stories.js": "file_storybook",
+        "stories.jsx": "file_storybook",
+        "stories.ts": "file_storybook",
+        "stories.tsx": "file_storybook",
+        "stories.mdx": "file_storybook",
+        "stories.svelte": "file_storybook",
+        "stories.vue": "file_storybook"
     },
     "languageIds": {
         "dotenv": "file_env",
-        "dockerfile": "file_docker"
+        "dockerfile": "file_docker",
+        "xml": "file_xml",
+        "shellscript": "file_shell",
+        "ruby": "file_ruby",
+        "markdown": "file_markdown",
+        "cpp": "file_cpp",
+        "c": "file_c",
+        "json": "file_json",
+        "jsonc": "file_json",
+        "html": "file_html",
+        "python": "file_python",
+        "properties": "file_properties",
+        "yaml": "file_yaml",
+        "powershell": "file_shell",
+        "php": "file_php",
+        "groovy": "file_groovy",
+        "javascript": "file_javascript",
+        "perl": "file_perl",
+        "makefile": "file_makefile",
+        "csharp": "file_cs",
+        "clojure": "file_clojure",
+        "sql": "file_sql",
+        "java": "file_java",
+        "diff": "file_patch",
+        "ignore": "file_ignored",
+        "handlebars": "file_handlebars",
+        "coffeescript": "file_coffeescript"
     },
     "light": {
         "file": "file_text_light",
@@ -1589,7 +1751,31 @@
             "__fixtures__": "folder_test_resources_root_light",
             "classes": "folder_compiled_light",
             "framework": "folder_framework_light",
-            "frameworks": "folder_framework_light"
+            "frameworks": "folder_framework_light",
+            ".next": "folder_excluded_light",
+            ".nuxt": "folder_excluded_light",
+            ".svelte-kit": "folder_excluded_light",
+            ".turbo": "folder_excluded_light",
+            ".cache": "folder_excluded_light",
+            "coverage": "folder_excluded_light",
+            ".venv": "folder_excluded_light",
+            "venv": "folder_excluded_light",
+            "__pycache__": "folder_excluded_light",
+            ".pytest_cache": "folder_excluded_light",
+            ".mypy_cache": "folder_excluded_light",
+            ".ruff_cache": "folder_excluded_light",
+            ".gradle": "folder_excluded_light",
+            "Pods": "folder_excluded_light",
+            "DerivedData": "folder_excluded_light",
+            ".dart_tool": "folder_excluded_light",
+            ".terraform": "folder_excluded_light",
+            ".vercel": "folder_excluded_light",
+            ".netlify": "folder_excluded_light",
+            "e2e": "folder_test_root_light",
+            "__mocks__": "folder_test_resources_root_light",
+            "__snapshots__": "folder_test_resources_root_light",
+            "public": "folder_resources_root_light",
+            "static": "folder_resources_root_light"
         },
         "fileNames": {
             "dune": "file_dune_light",
@@ -1769,7 +1955,42 @@
             "stylelint.config.cjs": "file_stylelint_light",
             "stylelint.config.mjs": "file_stylelint_light",
             ".jshintrc": "file_jshint_light",
-            "MANIFEST.MF": "file_manifest_light"
+            "MANIFEST.MF": "file_manifest_light",
+            "build.gradle": "file_gradle_light",
+            "settings.gradle": "file_gradle_light",
+            "gradlew": "file_gradle_light",
+            "gradlew.bat": "file_gradle_light",
+            "gradle.properties": "file_gradle_light",
+            "gradle-wrapper.properties": "file_gradle_light",
+            "Podfile": "file_cocoapods_light",
+            "Podfile.lock": "file_cocoapods_light",
+            ".graphqlrc": "file_graphql_config_light",
+            ".graphqlrc.json": "file_graphql_config_light",
+            ".graphqlrc.yaml": "file_graphql_config_light",
+            ".graphqlrc.yml": "file_graphql_config_light",
+            ".graphqlrc.js": "file_graphql_config_light",
+            ".graphqlrc.ts": "file_graphql_config_light",
+            "graphql.config.js": "file_graphql_config_light",
+            "graphql.config.cjs": "file_graphql_config_light",
+            "graphql.config.mjs": "file_graphql_config_light",
+            "graphql.config.ts": "file_graphql_config_light",
+            "graphql.config.json": "file_graphql_config_light",
+            "graphql.config.yaml": "file_graphql_config_light",
+            "graphql.config.yml": "file_graphql_config_light",
+            "meson.build": "file_meson_light",
+            "meson_options.txt": "file_meson_light",
+            "meson.options": "file_meson_light",
+            ".clang-format": "file_clang_format_light",
+            "_clang-format": "file_clang_format_light",
+            "Chart.yaml": "file_helm_light",
+            "Chart.lock": "file_helm_light",
+            "jest.config.js": "file_jest_light",
+            "jest.config.cjs": "file_jest_light",
+            "jest.config.mjs": "file_jest_light",
+            "jest.config.ts": "file_jest_light",
+            "jest.config.cts": "file_jest_light",
+            "jest.config.mts": "file_jest_light",
+            "jest.config.json": "file_jest_light"
         },
         "fileExtensions": {
             "ml": "file_ml_light",
@@ -1998,11 +2219,48 @@
             "bin": "file_binary_light",
             "o": "file_binary_light",
             "dll": "file_windows_light",
-            "msi": "file_windows_light"
+            "msi": "file_windows_light",
+            "gradle": "file_gradle_light",
+            "gradle.kts": "file_gradle_light",
+            "podspec": "file_cocoapods_light",
+            "styl": "file_stylus_light",
+            "stories.js": "file_storybook_light",
+            "stories.jsx": "file_storybook_light",
+            "stories.ts": "file_storybook_light",
+            "stories.tsx": "file_storybook_light",
+            "stories.mdx": "file_storybook_light",
+            "stories.svelte": "file_storybook_light",
+            "stories.vue": "file_storybook_light"
         },
         "languageIds": {
             "dotenv": "file_env_light",
-            "dockerfile": "file_docker_light"
+            "dockerfile": "file_docker_light",
+            "xml": "file_xml_light",
+            "shellscript": "file_shell_light",
+            "ruby": "file_ruby_light",
+            "markdown": "file_markdown_light",
+            "cpp": "file_cpp_light",
+            "c": "file_c_light",
+            "json": "file_json_light",
+            "jsonc": "file_json_light",
+            "html": "file_html_light",
+            "python": "file_python_light",
+            "properties": "file_properties_light",
+            "yaml": "file_yaml_light",
+            "powershell": "file_shell_light",
+            "php": "file_php_light",
+            "groovy": "file_groovy_light",
+            "javascript": "file_javascript_light",
+            "perl": "file_perl_light",
+            "makefile": "file_makefile_light",
+            "csharp": "file_cs_light",
+            "clojure": "file_clojure_light",
+            "sql": "file_sql_light",
+            "java": "file_java_light",
+            "diff": "file_patch_light",
+            "ignore": "file_ignored_light",
+            "handlebars": "file_handlebars_light",
+            "coffeescript": "file_coffeescript_light"
         }
     },
     "fonts": [
