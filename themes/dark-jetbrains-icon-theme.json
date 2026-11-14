@@ -654,6 +654,8 @@
         "svelte": "file_svelte",
         "slim": "file_slim",
         "sln": "file_sln",
+        "slnx": "file_sln",
+        "slnf": "file_sln",
         "rs": "file_rust",
         "cs": "file_cs",
         "cshtml": "file_cshtml",
