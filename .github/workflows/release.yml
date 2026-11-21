@@ -22,13 +22,15 @@ jobs:
         run: |
           echo "version=$(node -p "require('./package.json').version")" >> "$GITHUB_OUTPUT"
           echo "run_url=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}" >> "$GITHUB_OUTPUT"
+          # Идентификатор для fogio-api берётся из манифеста, а не прописывается
+          # в workflow: иначе он разъедется с package.json при переименовании.
+          echo "extension_id=$(node -p "const p = require('./package.json'); p.publisher + '.' + p.name")" >> "$GITHUB_OUTPUT"
       - name: Check notification credentials
         id: secrets-check
         env:
           FOGIO_BOT_APP_ID: ${{ secrets.FOGIO_BOT_APP_ID }}
           FOGIO_BOT_PRIVATE_KEY: ${{ secrets.FOGIO_BOT_PRIVATE_KEY }}
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          FOGIO_API_TOKEN: ${{ secrets.FOGIO_API_TOKEN }}
         run: |
           if [ -n "$FOGIO_BOT_APP_ID" ] && [ -n "$FOGIO_BOT_PRIVATE_KEY" ]; then
             echo "has_fogio_bot=true" >> "$GITHUB_OUTPUT"
@@ -36,10 +38,10 @@ jobs:
             echo "has_fogio_bot=false" >> "$GITHUB_OUTPUT"
           fi
 
-          if [ -n "$TELEGRAM_BOT_TOKEN" ] && [ -n "$TELEGRAM_CHAT_ID" ]; then
-            echo "has_telegram=true" >> "$GITHUB_OUTPUT"
+          if [ -n "$FOGIO_API_TOKEN" ]; then
+            echo "has_fogio_api=true" >> "$GITHUB_OUTPUT"
           else
-            echo "has_telegram=false" >> "$GITHUB_OUTPUT"
+            echo "has_fogio_api=false" >> "$GITHUB_OUTPUT"
           fi
       - name: Generate fogio-ci bot token
         id: bot-token
@@ -156,41 +158,47 @@ jobs:
               "/repos/${GITHUB_REPOSITORY}/commits/${GITHUB_SHA}/comments" \
               -f body="$COMMENT_BODY"
           fi
-      - name: Send Telegram notification
-        if: ${{ always() && steps.secrets-check.outputs.has_telegram == 'true' }}
+      # Уведомление уходит в fogio-api, а он уже решает, как это выглядит
+      # и куда доставляется. Здесь только факты: что, какой версии и чем
+      # закончилось на каждой площадке.
+      - name: Notify fogio API
+        if: ${{ always() && steps.secrets-check.outputs.has_fogio_api == 'true' }}
+        # Уведомление — не результат работы: недоступный api не повод красить
+        # успешную публикацию.
+        continue-on-error: true
         env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          FOGIO_API_TOKEN: ${{ secrets.FOGIO_API_TOKEN }}
+          EXTENSION_ID: ${{ steps.meta.outputs.extension_id }}
           RELEASE_VERSION: ${{ steps.meta.outputs.version }}
           RELEASE_RUN_URL: ${{ steps.meta.outputs.run_url }}
-          VSCE_STATUS: ${{ steps.publish-vsce.outputs.status }}
-          VSCE_EXIT_CODE: ${{ steps.publish-vsce.outputs.exit_code }}
-          OVSX_STATUS: ${{ steps.publish-ovsx.outputs.status }}
-          OVSX_EXIT_CODE: ${{ steps.publish-ovsx.outputs.exit_code }}
+          VSCE_RESULT: ${{ steps.publish-vsce.outputs.status }}
+          OVSX_RESULT: ${{ steps.publish-ovsx.outputs.status }}
         run: |
-          if [ "$VSCE_STATUS" = "success" ] && [ "$OVSX_STATUS" = "success" ]; then
-            STATUS_ICON="✅"
-            STATUS_TEXT="Release deployed"
-          else
-            STATUS_ICON="❌"
-            STATUS_TEXT="Release failed"
-          fi
+          set -euo pipefail
 
-          TELEGRAM_TEXT="$(printf '%s\n%s\n%s\n%s\n%s\n%s\n%s' \
-            "<b>${STATUS_ICON} ${STATUS_TEXT}</b>" \
-            "<b>Repository:</b> ${GITHUB_REPOSITORY}" \
-            "<b>Version:</b> ${RELEASE_VERSION}" \
-            "<b>Commit:</b> <code>${GITHUB_SHA}</code>" \
-            "<b>VS Code Marketplace:</b> ${VSCE_STATUS} (exit code: ${VSCE_EXIT_CODE})" \
-            "<b>Open VSX:</b> ${OVSX_STATUS} (exit code: ${OVSX_EXIT_CODE})" \
-            "<b>Run:</b> ${RELEASE_RUN_URL}")"
+          payload="$(jq -n \
+            --arg extension "$EXTENSION_ID" \
+            --arg version "$RELEASE_VERSION" \
+            --arg marketplace "$VSCE_RESULT" \
+            --arg openvsx "$OVSX_RESULT" \
+            --arg run_url "$RELEASE_RUN_URL" \
+            '{
+              template: "vsc_release",
+              data: {
+                extension: $extension,
+                version: $version,
+                marketplace: $marketplace,
+                openvsx: $openvsx,
+                run_url: $run_url
+              }
+            }')"
 
-          curl --fail --silent --show-error \
-            --request POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
-            --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
-            --data-urlencode "text=${TELEGRAM_TEXT}" \
-            --data-urlencode "parse_mode=HTML" \
-            --data-urlencode "disable_web_page_preview=true"
+          curl -fsS --retry 2 --retry-delay 3 \
+            -X POST https://api.fogio.org/v1/notify \
+            -H "Authorization: Bearer ${FOGIO_API_TOKEN}" \
+            -H "Content-Type: application/json" \
+            -H "Idempotency-Key: release-${GITHUB_SHA}" \
+            -d "$payload"
       - name: Fail workflow if publish failed
         if: ${{ steps.publish-vsce.outputs.status != 'success' || steps.publish-ovsx.outputs.status != 'success' }}
         run: exit 1

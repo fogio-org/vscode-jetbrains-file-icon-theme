@@ -3,7 +3,7 @@
   "displayName": "JetBrains New UI File Icon Theme Extended",
   "description": "JetBrains IDEs New UI inspired icon theme. Minimize distractions and boost productivity",
   "publisher": "fogio",
-  "version": "1.8.0",
+  "version": "1.9.0",
   "license": "MIT",
   "homepage": "https://github.com/fogio-org/vscode-jetbrains-file-icon-theme",
   "bugs": {
@@ -92,12 +92,14 @@
   ],
   "main": "./src/extension.js",
   "scripts": {
+    "preview": "node scripts/generate-previews.js",
     "validate:manifest": "node scripts/validate-manifest.js",
     "validate": "node scripts/validate-icon-themes.js",
     "package": "vsce package",
     "publish": "vsce publish"
   },
   "devDependencies": {
+    "@resvg/resvg-js": "2.6.2",
     "@vscode/vsce": "^3.0.0"
   }
 }
