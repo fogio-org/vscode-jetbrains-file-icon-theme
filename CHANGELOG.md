@@ -1,5 +1,18 @@
 # Change Log
 
+## 1.9.0
+
+- Add JetBrains icons for Gradle, CocoaPods, Bazel, Helm, Jest, Storybook, OpenAPI, and more across the Auto, Dark, and Light themes.
+- Expand icon coverage for common configuration files, file extensions, and VS Code language modes.
+- Add distinct folder icons for source and test roots, resources, generated files, logs, and excluded folders.
+- Fix the `.otf` font icon mapping.
+
+#18 by rokartur
+
+- Add solution icons for `.slnx` and `.slnf` files across the Auto, Dark, and Light themes.
+
+#19 by zhipeng24
+
 ## 1.8.0
 
 - Map .codex, .gitee, .run, and .mvn in the auto, dark, and light themes.
