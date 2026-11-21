@@ -92,12 +92,14 @@
   ],
   "main": "./src/extension.js",
   "scripts": {
+    "preview": "node scripts/generate-previews.js",
     "validate:manifest": "node scripts/validate-manifest.js",
     "validate": "node scripts/validate-icon-themes.js",
     "package": "vsce package",
     "publish": "vsce publish"
   },
   "devDependencies": {
+    "@resvg/resvg-js": "2.6.2",
     "@vscode/vsce": "^3.0.0"
   }
 }

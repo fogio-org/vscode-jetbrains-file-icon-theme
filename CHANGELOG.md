@@ -13,6 +13,10 @@
 
 #19 by zhipeng24
 
+- Update previews
+
+by nparamonov
+
 ## 1.8.0
 
 - Map .codex, .gitee, .run, and .mvn in the auto, dark, and light themes.

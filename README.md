@@ -45,6 +45,10 @@ Icons for reserved file names
 
 ![Preview file names icons](https://raw.githubusercontent.com/fogio-org/vscode-jetbrains-file-icon-theme/refs/heads/master/assets/img/preview_file_names.png)
 
+### Language icons
+
+![Preview icons by language ID](https://raw.githubusercontent.com/fogio-org/vscode-jetbrains-file-icon-theme/refs/heads/master/assets/img/preview_language_ids.png)
+
 ### Icons for go test files (experimental)
 
 ![Preview go test files](https://raw.githubusercontent.com/fogio-org/vscode-jetbrains-file-icon-theme/refs/heads/master/assets/img/preview_go_test_files.png)
