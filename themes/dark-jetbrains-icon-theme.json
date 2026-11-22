@@ -237,6 +237,9 @@
         "file_dart": {
             "iconPath": "./icons/file/dart_dark.svg"
         },
+        "file_caddy": {
+            "iconPath": "./icons/file/caddy_dark.svg"
+        },
         "file_docker": {
             "iconPath": "./icons/file/docker_dark.svg"
         },
@@ -710,6 +713,8 @@
         "yarn.lock": "file_yarn",
         "README": "file_markdown",
         ".dockerignore": "file_ignored",
+        "Caddyfile": "file_caddy",
+        ".caddy": "file_caddy",
         "Dockerfile": "file_docker",
         "Dockerfile.dev": "file_docker",
         "Dockerfile.test": "file_docker",
@@ -1068,6 +1073,7 @@
         "heex": "file_embedded_elixir",
         "leex": "file_embedded_elixir",
         "beam": "file_beam",
+        "caddy": "file_caddy",
         "dockerfile": "file_docker",
         "swift": "file_swift",
         "cljc": "file_clojure",

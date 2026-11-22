@@ -2,11 +2,14 @@
 
 ## 1.10.0
 
-- Declare Agents Window support- #21
+- Declare Agents Window support
 
 #21 by St0ff3l
 
 - Add gigacode icon support
+- Add Caddyfile, .caddy icon support
+
+by nparamonov
 
 ## 1.9.0
 

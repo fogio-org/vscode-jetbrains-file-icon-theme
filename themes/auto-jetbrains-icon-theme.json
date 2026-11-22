@@ -237,6 +237,9 @@
         "file_dart": {
             "iconPath": "./icons/file/dart_dark.svg"
         },
+        "file_caddy": {
+            "iconPath": "./icons/file/caddy_dark.svg"
+        },
         "file_docker": {
             "iconPath": "./icons/file/docker_dark.svg"
         },
@@ -647,6 +650,9 @@
         },
         "file_dart_light": {
             "iconPath": "./icons/file/dart.svg"
+        },
+        "file_caddy_light": {
+            "iconPath": "./icons/file/caddy.svg"
         },
         "file_docker_light": {
             "iconPath": "./icons/file/docker.svg"
@@ -1238,6 +1244,8 @@
         "yarn.lock": "file_yarn",
         "README": "file_markdown",
         ".dockerignore": "file_ignored",
+        "Caddyfile": "file_caddy",
+        ".caddy": "file_caddy",
         "Dockerfile": "file_docker",
         "Dockerfile.dev": "file_docker",
         "Dockerfile.test": "file_docker",
@@ -1596,6 +1604,7 @@
         "heex": "file_embedded_elixir",
         "leex": "file_embedded_elixir",
         "beam": "file_beam",
+        "caddy": "file_caddy",
         "dockerfile": "file_docker",
         "swift": "file_swift",
         "cljc": "file_clojure",
@@ -1966,6 +1975,8 @@
             "yarn.lock": "file_yarn_light",
             "README": "file_markdown_light",
             ".dockerignore": "file_ignored_light",
+            "Caddyfile": "file_caddy_light",
+            ".caddy": "file_caddy_light",
             "Dockerfile": "file_docker_light",
             "Dockerfile.dev": "file_docker_light",
             "Dockerfile.test": "file_docker_light",
@@ -2324,6 +2335,7 @@
             "heex": "file_embedded_elixir_light",
             "leex": "file_embedded_elixir_light",
             "beam": "file_beam_light",
+            "caddy": "file_caddy_light",
             "dockerfile": "file_docker_light",
             "swift": "file_swift_light",
             "cljc": "file_clojure_light",
