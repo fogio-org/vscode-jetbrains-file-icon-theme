@@ -237,6 +237,9 @@
         "file_dart_light": {
             "iconPath": "./icons/file/dart.svg"
         },
+        "file_caddy_light": {
+            "iconPath": "./icons/file/caddy.svg"
+        },
         "file_docker_light": {
             "iconPath": "./icons/file/docker.svg"
         },
@@ -582,6 +585,7 @@
         ".antigravitycli": "folder_idea_light",
         ".antigravity": "folder_idea_light",
         ".claude": "folder_idea_light",
+        ".gigacode": "folder_idea_light",
         ".codegraph": "folder_idea_light",
         ".omo": "folder_idea_light",
         ".opencode": "folder_idea_light",
@@ -706,6 +710,8 @@
         "yarn.lock": "file_yarn_light",
         "README": "file_markdown_light",
         ".dockerignore": "file_ignored_light",
+        "Caddyfile": "file_caddy_light",
+        ".caddy": "file_caddy_light",
         "Dockerfile": "file_docker_light",
         "Dockerfile.dev": "file_docker_light",
         "Dockerfile.test": "file_docker_light",
@@ -1064,6 +1070,7 @@
         "heex": "file_embedded_elixir_light",
         "leex": "file_embedded_elixir_light",
         "beam": "file_beam_light",
+        "caddy": "file_caddy_light",
         "dockerfile": "file_docker_light",
         "swift": "file_swift_light",
         "cljc": "file_clojure_light",
