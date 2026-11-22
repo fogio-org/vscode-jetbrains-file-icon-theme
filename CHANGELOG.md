@@ -1,5 +1,13 @@
 # Change Log
 
+## 1.10.0
+
+- Declare Agents Window support- #21
+
+#21 by St0ff3l
+
+- Add gigacode icon support
+
 ## 1.9.0
 
 - Add JetBrains icons for Gradle, CocoaPods, Bazel, Helm, Jest, Storybook, OpenAPI, and more across the Auto, Dark, and Light themes.
