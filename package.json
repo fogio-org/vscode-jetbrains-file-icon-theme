@@ -25,6 +25,11 @@
     "ui",
     "workspace"
   ],
+  "capabilities": {
+    "agentsWindow": {
+      "supported": true
+    }
+  },
   "keywords": [
     "jetbrains",
     "intellij",
