@@ -123,4 +123,5 @@ Also, there are some additional settings that you can apply both in the Settings
 I express my deep gratitude to the JetBrains team for their work. Here are links to open resources used to create this theme:
 
 - JetBrains icons: [https://jetbrains.design/intellij/resources/icons_list/](https://jetbrains.design/intellij/resources/icons_list/)
+- OpenIDEA file type icons for languages without a JetBrains New UI icon (Apache 2.0): [https://github.com/l0ng-ai/openidea](https://github.com/l0ng-ai/openidea)
 - JetBrains Mono font: [https://www.jetbrains.com/lp/mono/](https://www.jetbrains.com/lp/mono/)

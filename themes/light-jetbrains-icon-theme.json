@@ -10,7 +10,7 @@
             "iconPath": "./icons/folder/folder_database_light.svg"
         },
         "folder_docs_light": {
-            "iconPath": "./icons/folder/folder_docs_light.svg"
+            "iconPath": "./icons/folder/folder_resources_root_light.svg"
         },
         "folder_framework_light": {
             "iconPath": "./icons/folder/folder_framework_light.svg"
@@ -34,7 +34,7 @@
             "iconPath": "./icons/folder/folder_project_light.svg"
         },
         "folder_resources_light": {
-            "iconPath": "./icons/folder/folder_resources_light.svg"
+            "iconPath": "./icons/folder/folder_resources_root_light.svg"
         },
         "folder_run_light": {
             "iconPath": "./icons/folder/folder_run_light.svg"
@@ -97,7 +97,7 @@
             "iconPath": "./icons/file/erbFile.svg"
         },
         "file_scss_light": {
-            "iconPath": "./icons/file/scss.svg"
+            "iconPath": "./icons/file/sass.svg"
         },
         "file_json_light": {
             "iconPath": "./icons/file/json.svg"
@@ -322,10 +322,10 @@
             "iconPath": "./icons/file/clojure.svg"
         },
         "file_ml_light": {
-            "iconPath": "./icons/file/ml.svg"
+            "iconPath": "./icons/file/ocaml.svg"
         },
         "file_mli_light": {
-            "iconPath": "./icons/file/mli.svg"
+            "iconPath": "./icons/file/ocaml.svg"
         },
         "file_dune_light": {
             "iconPath": "./icons/file/dune.svg"
@@ -349,7 +349,7 @@
             "iconPath": "./icons/file/jupyter.svg"
         },
         "file_mdx_light": {
-            "iconPath": "./icons/file/mdx.svg"
+            "iconPath": "./icons/file/markdown.svg"
         },
         "file_erlang_light": {
             "iconPath": "./icons/file/erlang.svg"
@@ -364,7 +364,7 @@
             "iconPath": "./icons/file/graphql.svg"
         },
         "file_buildprops_light": {
-            "iconPath": "./icons/file/projectProperties.svg"
+            "iconPath": "./icons/file/properties.svg"
         },
         "file_test_ts_light": {
             "iconPath": "./icons/file/tsTest.svg"
@@ -533,6 +533,105 @@
         },
         "file_openapi_light": {
             "iconPath": "./icons/file/openApi.svg"
+        },
+        "file_astro_light": {
+            "iconPath": "./icons/file/astro.svg"
+        },
+        "file_gradle_kts_light": {
+            "iconPath": "./icons/file/kotlinGradleScript.svg"
+        },
+        "file_kotlin_script_light": {
+            "iconPath": "./icons/file/kotlinScript.svg"
+        },
+        "file_idl_light": {
+            "iconPath": "./icons/file/idl.svg"
+        },
+        "file_maven_light": {
+            "iconPath": "./icons/file/maven.svg"
+        },
+        "file_pipenv_light": {
+            "iconPath": "./icons/file/pipenv.svg"
+        },
+        "file_pyproject_light": {
+            "iconPath": "./icons/file/toml.svg"
+        },
+        "file_regexp_light": {
+            "iconPath": "./icons/file/regexp.svg"
+        },
+        "file_requirements_light": {
+            "iconPath": "./icons/file/requirements.svg"
+        },
+        "file_rst_light": {
+            "iconPath": "./icons/file/rst.svg"
+        },
+        "file_asciidoc_light": {
+            "iconPath": "./icons/file/asciidoc.svg"
+        },
+        "file_d_light": {
+            "iconPath": "./icons/file/d.svg"
+        },
+        "file_freemarker_light": {
+            "iconPath": "./icons/file/freemarker.svg"
+        },
+        "file_fsharp_light": {
+            "iconPath": "./icons/file/fsharp.svg"
+        },
+        "file_gdscript_light": {
+            "iconPath": "./icons/file/gdscript.svg"
+        },
+        "file_gdshader_light": {
+            "iconPath": "./icons/file/gdshader.svg"
+        },
+        "file_gherkin_light": {
+            "iconPath": "./icons/file/cucumber.svg"
+        },
+        "file_godot_light": {
+            "iconPath": "./icons/file/godot.svg"
+        },
+        "file_julia_light": {
+            "iconPath": "./icons/file/julia.svg"
+        },
+        "file_latex_light": {
+            "iconPath": "./icons/file/latex.svg"
+        },
+        "file_log_light": {
+            "iconPath": "./icons/file/log.svg"
+        },
+        "file_nix_light": {
+            "iconPath": "./icons/file/nix.svg"
+        },
+        "file_objc_light": {
+            "iconPath": "./icons/file/m.svg"
+        },
+        "file_objcpp_light": {
+            "iconPath": "./icons/file/m.svg"
+        },
+        "file_powershell_light": {
+            "iconPath": "./icons/file/powershell.svg"
+        },
+        "file_prisma_light": {
+            "iconPath": "./icons/file/prisma.svg"
+        },
+        "file_r_light": {
+            "iconPath": "./icons/file/r.svg"
+        },
+        "file_slint_light": {
+            "iconPath": "./icons/file/slint.svg"
+        },
+        "file_typst_light": {
+            "iconPath": "./icons/file/typst.svg"
+        },
+        "file_zig_light": {
+            "iconPath": "./icons/file/zig.svg"
+        },
+        "file_sass_light": {
+            "iconPath": "./icons/file/sass.svg"
+        },
+        "file_readme_light": {
+            "iconPath": "./icons/file/readme.svg"
+        },
+        "file_graphviz_light": {
+            "iconPath": "./icons/file/graphviz.svg"
         }
     },
     "file": "file_text_light",
@@ -708,7 +807,7 @@
         ".editorconfig": "file_editorconfig_light",
         ".yarnrc": "file_yarn_light",
         "yarn.lock": "file_yarn_light",
-        "README": "file_markdown_light",
+        "README": "file_readme_light",
         ".dockerignore": "file_ignored_light",
         "Caddyfile": "file_caddy_light",
         ".caddy": "file_caddy_light",
@@ -953,7 +1052,140 @@
         "openapi.json": "file_openapi_light",
         "swagger.yaml": "file_openapi_light",
         "swagger.yml": "file_openapi_light",
-        "swagger.json": "file_openapi_light"
+        "swagger.json": "file_openapi_light",
+        "SConstruct": "file_python_light",
+        "SConscript": "file_python_light",
+        ".bashrc": "file_shell_light",
+        ".bash_profile": "file_shell_light",
+        ".bash_login": "file_shell_light",
+        ".bash_logout": "file_shell_light",
+        ".bash_aliases": "file_shell_light",
+        ".profile": "file_shell_light",
+        ".zshrc": "file_shell_light",
+        ".zshenv": "file_shell_light",
+        ".zprofile": "file_shell_light",
+        ".zlogin": "file_shell_light",
+        ".zlogout": "file_shell_light",
+        ".kshrc": "file_shell_light",
+        "PKGBUILD": "file_shell_light",
+        "APKBUILD": "file_shell_light",
+        ".envrc": "file_shell_light",
+        "justfile": "file_config_light",
+        "Procfile": "file_config_light",
+        ".python-version": "file_config_light",
+        ".ruby-version": "file_config_light",
+        ".tool-versions": "file_config_light",
+        ".pypirc": "file_config_light",
+        "pylintrc": "file_config_light",
+        "setup.cfg": "file_config_light",
+        "tox.ini": "file_config_light",
+        "pytest.ini": "file_config_light",
+        "mypy.ini": "file_config_light",
+        ".hgrc": "file_config_light",
+        "hgrc": "file_config_light",
+        ".gemrc": "file_config_light",
+        ".clang-tidy": "file_config_light",
+        ".clangd": "file_config_light",
+        ".watchmanconfig": "file_config_light",
+        ".arcconfig": "file_config_light",
+        "tsconfig.json": "file_config_light",
+        "jsconfig.json": "file_config_light",
+        ".babelrc": "file_config_light",
+        ".babelrc.json": "file_config_light",
+        ".swcrc": "file_config_light",
+        ".markdownlintrc": "file_config_light",
+        "bun.lockb": "file_lock_light",
+        "bun.lock": "file_lock_light",
+        "deno.lock": "file_lock_light",
+        ".cfignore": "file_ignored_light",
+        ".bzrignore": "file_ignored_light",
+        ".containerignore": "file_ignored_light",
+        ".gitignore_global": "file_gitignore_light",
+        ".worktreeinclude": "file_gitignore_light",
+        "pom.xml": "file_maven_light",
+        "mvnw": "file_maven_light",
+        "mvnw.cmd": "file_maven_light",
+        "Makefile.PL": "file_perl_light",
+        "Build.PL": "file_perl_light",
+        "cpanfile": "file_perl_light",
+        "Vagrantfile": "file_ruby_light",
+        "Brewfile": "file_ruby_light",
+        "Guardfile": "file_ruby_light",
+        "Fastfile": "file_ruby_light",
+        "Appfile": "file_ruby_light",
+        "Capfile": "file_ruby_light",
+        "Dangerfile": "file_ruby_light",
+        "Steepfile": "file_ruby_light",
+        ".irbrc": "file_ruby_light",
+        ".pryrc": "file_ruby_light",
+        ".luacheckrc": "file_lua_light",
+        "deps.edn": "file_clojure_light",
+        "project.clj": "file_clojure_light",
+        "bb.edn": "file_clojure_light",
+        ".Rprofile": "file_r_light",
+        "Containerfile": "file_docker_light",
+        "BSDmakefile": "file_makefile_light",
+        "Makefile.am": "file_makefile_light",
+        "Makefile.in": "file_makefile_light",
+        "Kbuild": "file_makefile_light",
+        ".terraformrc": "file_terraform_light",
+        "terraform.rc": "file_terraform_light",
+        ".flaskenv": "file_env_light",
+        "pyproject.toml": "file_pyproject_light",
+        "requirements.txt": "file_requirements_light",
+        "requirements.in": "file_requirements_light",
+        "requirements-dev.txt": "file_requirements_light",
+        "requirements-test.txt": "file_requirements_light",
+        "dev-requirements.txt": "file_requirements_light",
+        "CITATION.cff": "file_yaml_light",
+        "credentials": "file_config_light",
+        "tsconfig.base.json": "file_config_light",
+        "tsconfig.app.json": "file_config_light",
+        "tsconfig.node.json": "file_config_light",
+        "tsconfig.build.json": "file_config_light",
+        "tsconfig.spec.json": "file_config_light",
+        "tsconfig.lib.json": "file_config_light",
+        "tsconfig.test.json": "file_config_light",
+        ".babelrc.js": "file_config_light",
+        ".babelrc.cjs": "file_config_light",
+        "babel.config.json": "file_config_light",
+        ".lintstagedrc.json": "file_config_light",
+        ".lintstagedrc.js": "file_config_light",
+        ".lintstagedrc.cjs": "file_config_light",
+        ".lintstagedrc.mjs": "file_config_light",
+        ".lintstagedrc.yaml": "file_config_light",
+        ".lintstagedrc.yml": "file_config_light",
+        ".commitlintrc.json": "file_config_light",
+        ".commitlintrc.js": "file_config_light",
+        ".commitlintrc.cjs": "file_config_light",
+        ".commitlintrc.ts": "file_config_light",
+        ".commitlintrc.yaml": "file_config_light",
+        ".commitlintrc.yml": "file_config_light",
+        ".markdownlintrc.json": "file_config_light",
+        ".markdownlintrc.yaml": "file_config_light",
+        ".markdownlintrc.yml": "file_config_light",
+        ".swcrc.json": "file_config_light",
+        "Dockerfile.local": "file_docker_light",
+        "Dockerfile.ci": "file_docker_light",
+        "Dockerfile.base": "file_docker_light",
+        "Dockerfile.build": "file_docker_light",
+        "Dockerfile.alpine": "file_docker_light",
+        "Dockerfile.debug": "file_docker_light",
+        "Dockerfile.release": "file_docker_light",
+        "Containerfile.dev": "file_docker_light",
+        "Containerfile.prod": "file_docker_light",
+        "Containerfile.test": "file_docker_light",
+        "requirements.dev.in": "file_requirements_light",
+        "requirements.docs.txt": "file_requirements_light",
+        "requirements.prod.txt": "file_requirements_light",
+        "requirements.lint.txt": "file_requirements_light",
+        "requirements.ci.txt": "file_requirements_light",
+        "requirements-docs.txt": "file_requirements_light",
+        "requirements-prod.txt": "file_requirements_light",
+        "requirements-lint.txt": "file_requirements_light",
+        "requirements-ci.txt": "file_requirements_light",
+        "readme.txt": "file_readme_light",
+        "README.txt": "file_readme_light"
     },
     "fileExtensions": {
         "ml": "file_ml_light",
@@ -963,7 +1195,7 @@
         "css": "file_css_light",
         "scss": "file_scss_light",
         "erb": "file_erb_light",
-        "sass": "file_scss_light",
+        "sass": "file_sass_light",
         "kt": "file_kotlin_light",
         "json": "file_json_light",
         "jsonc": "file_json_light",
@@ -1019,7 +1251,7 @@
         "zsh": "file_shell_light",
         "bash": "file_shell_light",
         "bat": "file_windows_light",
-        "ps1": "file_shell_light",
+        "ps1": "file_powershell_light",
         "h": "file_h_light",
         "hh": "file_h_light",
         "hpp": "file_h_light",
@@ -1145,7 +1377,7 @@
         "zst": "file_archive_light",
         "jar": "file_archive_light",
         "war": "file_archive_light",
-        "kts": "file_kotlin_light",
+        "kts": "file_kotlin_script_light",
         "tfvars": "file_terraform_light",
         "ini": "file_config_light",
         "xsd": "file_xsd_light",
@@ -1186,7 +1418,7 @@
         "dll": "file_windows_light",
         "msi": "file_windows_light",
         "gradle": "file_gradle_light",
-        "gradle.kts": "file_gradle_light",
+        "gradle.kts": "file_gradle_kts_light",
         "podspec": "file_cocoapods_light",
         "styl": "file_stylus_light",
         "stories.js": "file_storybook_light",
@@ -1233,7 +1465,181 @@
         "feature": "file_cucumber_light",
         "haml": "file_haml_light",
         "bzl": "file_bazel_light",
-        "bazel": "file_bazel_light"
+        "bazel": "file_bazel_light",
+        "pyx": "file_python_light",
+        "pxd": "file_python_light",
+        "topojson": "file_json_light",
+        "har": "file_json_light",
+        "avsc": "file_json_light",
+        "code-workspace": "file_json_light",
+        "code-snippets": "file_json_light",
+        "mdown": "file_markdown_light",
+        "mkd": "file_markdown_light",
+        "mkdn": "file_markdown_light",
+        "mdwn": "file_markdown_light",
+        "ronn": "file_markdown_light",
+        "workbook": "file_markdown_light",
+        "rst": "file_rst_light",
+        "log": "file_log_light",
+        "shtml": "file_html_light",
+        "djhtml": "file_html_light",
+        "html.tmpl": "file_html_light",
+        "fsproj": "file_xml_light",
+        "vbproj": "file_xml_light",
+        "props": "file_xml_light",
+        "targets": "file_xml_light",
+        "nuspec": "file_xml_light",
+        "xaml": "file_xml_light",
+        "axaml": "file_xml_light",
+        "resx": "file_xml_light",
+        "fxml": "file_xml_light",
+        "iml": "file_xml_light",
+        "jnlp": "file_xml_light",
+        "rss": "file_xml_light",
+        "atom": "file_xml_light",
+        "xliff": "file_xml_light",
+        "xlf": "file_xml_light",
+        "storyboard": "file_xml_light",
+        "xib": "file_xml_light",
+        "tld": "file_xml_light",
+        "ash": "file_shell_light",
+        "dash": "file_shell_light",
+        "bats": "file_shell_light",
+        "command": "file_shell_light",
+        "psm1": "file_powershell_light",
+        "psd1": "file_powershell_light",
+        "pssc": "file_powershell_light",
+        "psrc": "file_powershell_light",
+        "ddl": "file_sql_light",
+        "dml": "file_sql_light",
+        "psql": "file_sql_light",
+        "pgsql": "file_sql_light",
+        "mysql": "file_sql_light",
+        "inf": "file_config_light",
+        "reg": "file_config_light",
+        "url": "file_config_light",
+        "desktop": "file_config_light",
+        "service": "file_config_light",
+        "socket": "file_config_light",
+        "timer": "file_config_light",
+        "config.js": "file_config_light",
+        "config.cjs": "file_config_light",
+        "config.mjs": "file_config_light",
+        "config.ts": "file_config_light",
+        "config.cts": "file_config_light",
+        "config.mts": "file_config_light",
+        "prefs": "file_properties_light",
+        "rej": "file_patch_light",
+        "gvy": "file_groovy_light",
+        "gy": "file_groovy_light",
+        "gsh": "file_groovy_light",
+        "mill": "file_scala_light",
+        "phtml": "file_php_light",
+        "php3": "file_php_light",
+        "php4": "file_php_light",
+        "php5": "file_php_light",
+        "phps": "file_php_light",
+        "phpt": "file_php_light",
+        "psgi": "file_perl_light",
+        "cgi": "file_perl_light",
+        "h++": "file_h_light",
+        "c++": "file_cpp_light",
+        "ipp": "file_cpp_light",
+        "tpp": "file_cpp_light",
+        "inl": "file_cpp_light",
+        "csx": "file_cs_light",
+        "fs": "file_fsharp_light",
+        "fsi": "file_fsharp_light",
+        "fsx": "file_fsharp_light",
+        "swiftinterface": "file_swift_light",
+        "tmpl": "file_go_template_light",
+        "ru": "file_ruby_light",
+        "rbi": "file_ruby_light",
+        "jbuilder": "file_ruby_light",
+        "rhtml": "file_ruby_light",
+        "rockspec": "file_lua_light",
+        "zig": "file_zig_light",
+        "zon": "file_zig_light",
+        "gd": "file_gdscript_light",
+        "tscn": "file_godot_light",
+        "tres": "file_godot_light",
+        "godot": "file_godot_light",
+        "import": "file_godot_light",
+        "gdshader": "file_gdshader_light",
+        "gdshaderinc": "file_gdshader_light",
+        "adoc": "file_asciidoc_light",
+        "asciidoc": "file_asciidoc_light",
+        "typ": "file_typst_light",
+        "d": "file_d_light",
+        "di": "file_d_light",
+        "prisma": "file_prisma_light",
+        "slint": "file_slint_light",
+        "escript": "file_erlang_light",
+        "app.src": "file_erlang_light",
+        "hs-boot": "file_haskell_light",
+        "hsig": "file_haskell_light",
+        "mll": "file_ml_light",
+        "mly": "file_ml_light",
+        "cljd": "file_clojure_light",
+        "bb": "file_clojure_light",
+        "jl": "file_julia_light",
+        "r": "file_r_light",
+        "rprofile": "file_r_light",
+        "nix": "file_nix_light",
+        "tex": "file_latex_light",
+        "ltx": "file_latex_light",
+        "sty": "file_latex_light",
+        "cls": "file_latex_light",
+        "dtx": "file_latex_light",
+        "ins": "file_latex_light",
+        "bbx": "file_latex_light",
+        "cbx": "file_latex_light",
+        "bib": "file_latex_light",
+        "containerfile": "file_docker_light",
+        "mak": "file_makefile_light",
+        "make": "file_makefile_light",
+        "tofu": "file_terraform_light",
+        "tftest.hcl": "file_terraform_light",
+        "nomad": "file_hcl_light",
+        "pkr.hcl": "file_hcl_light",
+        "regexp": "file_regexp_light",
+        "idl": "file_idl_light",
+        "dat": "file_binary_light",
+        "wasm": "file_binary_light",
+        "jspf": "file_jsp_light",
+        "jsph": "file_jsp_light",
+        "tag": "file_jsp_light",
+        "tagf": "file_jsp_light",
+        "tagx": "file_jsp_light",
+        "ftl": "file_freemarker_light",
+        "ftlh": "file_freemarker_light",
+        "ftlx": "file_freemarker_light",
+        "astro": "file_astro_light",
+        "nim": "file_any_light",
+        "wit": "file_any_light",
+        "wat": "file_any_light",
+        "sol": "file_any_light",
+        "v": "file_any_light",
+        "sv": "file_any_light",
+        "gitignore": "file_ignored_light",
+        "dockerignore": "file_ignored_light",
+        "pom": "file_xml_light",
+        "tpl": "file_go_template_light",
+        "txt": "file_text_light",
+        "text": "file_text_light",
+        "dot": "file_graphviz_light",
+        "gv": "file_graphviz_light",
+        "env.staging": "file_env_light",
+        "env.dev": "file_env_light",
+        "env.prod": "file_env_light",
+        "env.sample": "file_env_light",
+        "env.template": "file_env_light",
+        "env.ci": "file_env_light",
+        "env.defaults": "file_env_light",
+        "env.vault": "file_env_light",
+        "env.stage": "file_env_light",
+        "env.qa": "file_env_light",
+        "env.preview": "file_env_light"
     },
     "languageIds": {
         "dotenv": "file_env_light",

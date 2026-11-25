@@ -1,5 +1,15 @@
 # Change Log
 
+## 1.11.0
+
+- Update icons to the current JetBrains New UI set for C, C++, CUDA, Objective-C, Go, Dart, Docker, Kotlin, Scala, Sass, TypeScript, JavaScript, ESLint, FreeMarker, Storybook, Terraform, and more.
+- Add light and dark New UI icons for CSS, GraphQL, Jupyter, Swift, YAML, SQL, Protobuf, C headers, Kotlin scripts, and Astro.
+- Add OpenIDEA icons for languages without a New UI icon, including Clojure, Erlang, Haskell, Lua, OCaml, F#, Godot, Zig, and more.
+- Map 174 more file extensions and 133 more file names across the Auto, Dark, and Light themes.
+- Fix the `dune-project` file name mapping in the Dark theme.
+
+by rokartur
+
 ## 1.10.0
 
 - Declare Agents Window support

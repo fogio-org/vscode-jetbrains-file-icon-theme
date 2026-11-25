@@ -10,7 +10,7 @@
             "iconPath": "./icons/folder/folder_database_dark.svg"
         },
         "folder_docs": {
-            "iconPath": "./icons/folder/folder_docs_dark.svg"
+            "iconPath": "./icons/folder/folder_resources_root_dark.svg"
         },
         "folder_framework": {
             "iconPath": "./icons/folder/folder_framework_dark.svg"
@@ -34,7 +34,7 @@
             "iconPath": "./icons/folder/folder_project_dark.svg"
         },
         "folder_resources": {
-            "iconPath": "./icons/folder/folder_resources_dark.svg"
+            "iconPath": "./icons/folder/folder_resources_root_dark.svg"
         },
         "folder_run": {
             "iconPath": "./icons/folder/folder_run_dark.svg"
@@ -91,13 +91,13 @@
             "iconPath": "./icons/file/ignored_dark.svg"
         },
         "file_css": {
-            "iconPath": "./icons/file/css.svg"
+            "iconPath": "./icons/file/css_dark.svg"
         },
         "file_erb": {
             "iconPath": "./icons/file/erbFile_dark.svg"
         },
         "file_scss": {
-            "iconPath": "./icons/file/scss.svg"
+            "iconPath": "./icons/file/sass_dark.svg"
         },
         "file_json": {
             "iconPath": "./icons/file/json_dark.svg"
@@ -259,7 +259,7 @@
             "iconPath": "./icons/file/anyType_dark.svg"
         },
         "file_svelte": {
-            "iconPath": "./icons/file/svelte.svg"
+            "iconPath": "./icons/file/svelte_dark.svg"
         },
         "file_rust": {
             "iconPath": "./icons/file/rustFile_dark.svg"
@@ -295,7 +295,7 @@
             "iconPath": "./icons/file/angularJS.svg"
         },
         "file_eslint": {
-            "iconPath": "./icons/file/eslint.svg"
+            "iconPath": "./icons/file/eslint_dark.svg"
         },
         "file_cs": {
             "iconPath": "./icons/file/cs_dark.svg"
@@ -316,16 +316,16 @@
             "iconPath": "./icons/file/eex_dark.svg"
         },
         "file_swift": {
-            "iconPath": "./icons/file/swift.svg"
+            "iconPath": "./icons/file/swift_dark.svg"
         },
         "file_clojure": {
-            "iconPath": "./icons/file/clojure.svg"
+            "iconPath": "./icons/file/clojure_dark.svg"
         },
         "file_ml": {
-            "iconPath": "./icons/file/ml.svg"
+            "iconPath": "./icons/file/ocaml_dark.svg"
         },
         "file_mli": {
-            "iconPath": "./icons/file/mli.svg"
+            "iconPath": "./icons/file/ocaml_dark.svg"
         },
         "file_dune": {
             "iconPath": "./icons/file/dune.svg"
@@ -346,25 +346,25 @@
             "iconPath": "./icons/file/application_dark.svg"
         },
         "file_jupyter": {
-            "iconPath": "./icons/file/jupyter.svg"
+            "iconPath": "./icons/file/jupyter_dark.svg"
         },
         "file_mdx": {
-            "iconPath": "./icons/file/mdx.svg"
+            "iconPath": "./icons/file/markdown_dark.svg"
         },
         "file_erlang": {
-            "iconPath": "./icons/file/erlang.svg"
+            "iconPath": "./icons/file/erlang_dark.svg"
         },
         "file_lua": {
-            "iconPath": "./icons/file/lua.svg"
+            "iconPath": "./icons/file/lua_dark.svg"
         },
         "file_haskell": {
-            "iconPath": "./icons/file/haskell.svg"
+            "iconPath": "./icons/file/haskell_dark.svg"
         },
         "file_graphql": {
-            "iconPath": "./icons/file/graphql.svg"
+            "iconPath": "./icons/file/graphql_dark.svg"
         },
         "file_buildprops": {
-            "iconPath": "./icons/file/projectProperties_dark.svg"
+            "iconPath": "./icons/file/properties_dark.svg"
         },
         "file_test_ts": {
             "iconPath": "./icons/file/tsTest_dark.svg"
@@ -391,7 +391,7 @@
             "iconPath": "./icons/file/ino_dark.svg"
         },
         "file_pdf": {
-            "iconPath": "./icons/file/pdf.svg"
+            "iconPath": "./icons/file/pdf_dark.svg"
         },
         "file_jinja": {
             "iconPath": "./icons/file/jinja_dark.svg"
@@ -536,6 +536,105 @@
         },
         "file_openapi": {
             "iconPath": "./icons/file/openApi_dark.svg"
+        },
+        "file_astro": {
+            "iconPath": "./icons/file/astro_dark.svg"
+        },
+        "file_gradle_kts": {
+            "iconPath": "./icons/file/kotlinGradleScript_dark.svg"
+        },
+        "file_kotlin_script": {
+            "iconPath": "./icons/file/kotlinScript_dark.svg"
+        },
+        "file_idl": {
+            "iconPath": "./icons/file/idl_dark.svg"
+        },
+        "file_maven": {
+            "iconPath": "./icons/file/maven_dark.svg"
+        },
+        "file_pipenv": {
+            "iconPath": "./icons/file/pipenv_dark.svg"
+        },
+        "file_pyproject": {
+            "iconPath": "./icons/file/toml_dark.svg"
+        },
+        "file_regexp": {
+            "iconPath": "./icons/file/regexp_dark.svg"
+        },
+        "file_requirements": {
+            "iconPath": "./icons/file/requirements_dark.svg"
+        },
+        "file_rst": {
+            "iconPath": "./icons/file/rst_dark.svg"
+        },
+        "file_asciidoc": {
+            "iconPath": "./icons/file/asciidoc_dark.svg"
+        },
+        "file_d": {
+            "iconPath": "./icons/file/d_dark.svg"
+        },
+        "file_freemarker": {
+            "iconPath": "./icons/file/freemarker_dark.svg"
+        },
+        "file_fsharp": {
+            "iconPath": "./icons/file/fsharp_dark.svg"
+        },
+        "file_gdscript": {
+            "iconPath": "./icons/file/gdscript_dark.svg"
+        },
+        "file_gdshader": {
+            "iconPath": "./icons/file/gdshader_dark.svg"
+        },
+        "file_gherkin": {
+            "iconPath": "./icons/file/cucumber.svg"
+        },
+        "file_godot": {
+            "iconPath": "./icons/file/godot_dark.svg"
+        },
+        "file_julia": {
+            "iconPath": "./icons/file/julia_dark.svg"
+        },
+        "file_latex": {
+            "iconPath": "./icons/file/latex_dark.svg"
+        },
+        "file_log": {
+            "iconPath": "./icons/file/log_dark.svg"
+        },
+        "file_nix": {
+            "iconPath": "./icons/file/nix_dark.svg"
+        },
+        "file_objc": {
+            "iconPath": "./icons/file/m_dark.svg"
+        },
+        "file_objcpp": {
+            "iconPath": "./icons/file/m_dark.svg"
+        },
+        "file_powershell": {
+            "iconPath": "./icons/file/powershell_dark.svg"
+        },
+        "file_prisma": {
+            "iconPath": "./icons/file/prisma_dark.svg"
+        },
+        "file_r": {
+            "iconPath": "./icons/file/r_dark.svg"
+        },
+        "file_slint": {
+            "iconPath": "./icons/file/slint_dark.svg"
+        },
+        "file_typst": {
+            "iconPath": "./icons/file/typst_dark.svg"
+        },
+        "file_zig": {
+            "iconPath": "./icons/file/zig_dark.svg"
+        },
+        "file_sass": {
+            "iconPath": "./icons/file/sass_dark.svg"
+        },
+        "file_readme": {
+            "iconPath": "./icons/file/readme_dark.svg"
+        },
+        "file_graphviz": {
+            "iconPath": "./icons/file/graphviz_dark.svg"
         }
     },
     "file": "file_text",
@@ -703,7 +802,6 @@
     },
     "fileNames": {
         "dune": "file_dune",
-        "dune-projecT": "file_dune",
         ".gitignore": "file_ignored",
         ".gitattributes": "file_gitignore",
         ".gitmodules": "file_gitignore",
@@ -711,7 +809,7 @@
         ".editorconfig": "file_editorconfig",
         ".yarnrc": "file_yarn",
         "yarn.lock": "file_yarn",
-        "README": "file_markdown",
+        "README": "file_readme",
         ".dockerignore": "file_ignored",
         "Caddyfile": "file_caddy",
         ".caddy": "file_caddy",
@@ -956,7 +1054,141 @@
         "openapi.json": "file_openapi",
         "swagger.yaml": "file_openapi",
         "swagger.yml": "file_openapi",
-        "swagger.json": "file_openapi"
+        "swagger.json": "file_openapi",
+        "SConstruct": "file_python",
+        "SConscript": "file_python",
+        ".bashrc": "file_shell",
+        ".bash_profile": "file_shell",
+        ".bash_login": "file_shell",
+        ".bash_logout": "file_shell",
+        ".bash_aliases": "file_shell",
+        ".profile": "file_shell",
+        ".zshrc": "file_shell",
+        ".zshenv": "file_shell",
+        ".zprofile": "file_shell",
+        ".zlogin": "file_shell",
+        ".zlogout": "file_shell",
+        ".kshrc": "file_shell",
+        "PKGBUILD": "file_shell",
+        "APKBUILD": "file_shell",
+        ".envrc": "file_shell",
+        "justfile": "file_config",
+        "Procfile": "file_config",
+        ".python-version": "file_config",
+        ".ruby-version": "file_config",
+        ".tool-versions": "file_config",
+        ".pypirc": "file_config",
+        "pylintrc": "file_config",
+        "setup.cfg": "file_config",
+        "tox.ini": "file_config",
+        "pytest.ini": "file_config",
+        "mypy.ini": "file_config",
+        ".hgrc": "file_config",
+        "hgrc": "file_config",
+        ".gemrc": "file_config",
+        ".clang-tidy": "file_config",
+        ".clangd": "file_config",
+        ".watchmanconfig": "file_config",
+        ".arcconfig": "file_config",
+        "tsconfig.json": "file_config",
+        "jsconfig.json": "file_config",
+        ".babelrc": "file_config",
+        ".babelrc.json": "file_config",
+        ".swcrc": "file_config",
+        ".markdownlintrc": "file_config",
+        "bun.lockb": "file_lock",
+        "bun.lock": "file_lock",
+        "deno.lock": "file_lock",
+        ".cfignore": "file_ignored",
+        ".bzrignore": "file_ignored",
+        ".containerignore": "file_ignored",
+        ".gitignore_global": "file_gitignore",
+        ".worktreeinclude": "file_gitignore",
+        "pom.xml": "file_maven",
+        "mvnw": "file_maven",
+        "mvnw.cmd": "file_maven",
+        "Makefile.PL": "file_perl",
+        "Build.PL": "file_perl",
+        "cpanfile": "file_perl",
+        "Vagrantfile": "file_ruby",
+        "Brewfile": "file_ruby",
+        "Guardfile": "file_ruby",
+        "Fastfile": "file_ruby",
+        "Appfile": "file_ruby",
+        "Capfile": "file_ruby",
+        "Dangerfile": "file_ruby",
+        "Steepfile": "file_ruby",
+        ".irbrc": "file_ruby",
+        ".pryrc": "file_ruby",
+        ".luacheckrc": "file_lua",
+        "deps.edn": "file_clojure",
+        "project.clj": "file_clojure",
+        "bb.edn": "file_clojure",
+        ".Rprofile": "file_r",
+        "Containerfile": "file_docker",
+        "BSDmakefile": "file_makefile",
+        "Makefile.am": "file_makefile",
+        "Makefile.in": "file_makefile",
+        "Kbuild": "file_makefile",
+        ".terraformrc": "file_terraform",
+        "terraform.rc": "file_terraform",
+        ".flaskenv": "file_env",
+        "pyproject.toml": "file_pyproject",
+        "requirements.txt": "file_requirements",
+        "requirements.in": "file_requirements",
+        "requirements-dev.txt": "file_requirements",
+        "requirements-test.txt": "file_requirements",
+        "dev-requirements.txt": "file_requirements",
+        "CITATION.cff": "file_yaml",
+        "dune-project": "file_dune",
+        "credentials": "file_config",
+        "tsconfig.base.json": "file_config",
+        "tsconfig.app.json": "file_config",
+        "tsconfig.node.json": "file_config",
+        "tsconfig.build.json": "file_config",
+        "tsconfig.spec.json": "file_config",
+        "tsconfig.lib.json": "file_config",
+        "tsconfig.test.json": "file_config",
+        ".babelrc.js": "file_config",
+        ".babelrc.cjs": "file_config",
+        "babel.config.json": "file_config",
+        ".lintstagedrc.json": "file_config",
+        ".lintstagedrc.js": "file_config",
+        ".lintstagedrc.cjs": "file_config",
+        ".lintstagedrc.mjs": "file_config",
+        ".lintstagedrc.yaml": "file_config",
+        ".lintstagedrc.yml": "file_config",
+        ".commitlintrc.json": "file_config",
+        ".commitlintrc.js": "file_config",
+        ".commitlintrc.cjs": "file_config",
+        ".commitlintrc.ts": "file_config",
+        ".commitlintrc.yaml": "file_config",
+        ".commitlintrc.yml": "file_config",
+        ".markdownlintrc.json": "file_config",
+        ".markdownlintrc.yaml": "file_config",
+        ".markdownlintrc.yml": "file_config",
+        ".swcrc.json": "file_config",
+        "Dockerfile.local": "file_docker",
+        "Dockerfile.ci": "file_docker",
+        "Dockerfile.base": "file_docker",
+        "Dockerfile.build": "file_docker",
+        "Dockerfile.alpine": "file_docker",
+        "Dockerfile.debug": "file_docker",
+        "Dockerfile.release": "file_docker",
+        "Containerfile.dev": "file_docker",
+        "Containerfile.prod": "file_docker",
+        "Containerfile.test": "file_docker",
+        "requirements.dev.in": "file_requirements",
+        "requirements.docs.txt": "file_requirements",
+        "requirements.prod.txt": "file_requirements",
+        "requirements.lint.txt": "file_requirements",
+        "requirements.ci.txt": "file_requirements",
+        "requirements-docs.txt": "file_requirements",
+        "requirements-prod.txt": "file_requirements",
+        "requirements-lint.txt": "file_requirements",
+        "requirements-ci.txt": "file_requirements",
+        "readme.txt": "file_readme",
+        "README.txt": "file_readme"
     },
     "fileExtensions": {
         "ml": "file_ml",
@@ -966,7 +1198,7 @@
         "dart": "file_dart",
         "erb": "file_erb",
         "scss": "file_scss",
-        "sass": "file_scss",
+        "sass": "file_sass",
         "kt": "file_kotlin",
         "json": "file_json",
         "jsonc": "file_json",
@@ -1022,7 +1254,7 @@
         "zsh": "file_shell",
         "bash": "file_shell",
         "bat": "file_windows",
-        "ps1": "file_shell",
+        "ps1": "file_powershell",
         "h": "file_h",
         "hh": "file_h",
         "hpp": "file_h",
@@ -1148,7 +1380,7 @@
         "zst": "file_archive",
         "jar": "file_archive",
         "war": "file_archive",
-        "kts": "file_kotlin",
+        "kts": "file_kotlin_script",
         "tfvars": "file_terraform",
         "ini": "file_config",
         "xsd": "file_xsd",
@@ -1189,7 +1421,7 @@
         "dll": "file_windows",
         "msi": "file_windows",
         "gradle": "file_gradle",
-        "gradle.kts": "file_gradle",
+        "gradle.kts": "file_gradle_kts",
         "podspec": "file_cocoapods",
         "styl": "file_stylus",
         "stories.js": "file_storybook",
@@ -1236,7 +1468,181 @@
         "feature": "file_cucumber",
         "haml": "file_haml",
         "bzl": "file_bazel",
-        "bazel": "file_bazel"
+        "bazel": "file_bazel",
+        "pyx": "file_python",
+        "pxd": "file_python",
+        "topojson": "file_json",
+        "har": "file_json",
+        "avsc": "file_json",
+        "code-workspace": "file_json",
+        "code-snippets": "file_json",
+        "mdown": "file_markdown",
+        "mkd": "file_markdown",
+        "mkdn": "file_markdown",
+        "mdwn": "file_markdown",
+        "ronn": "file_markdown",
+        "workbook": "file_markdown",
+        "rst": "file_rst",
+        "log": "file_log",
+        "shtml": "file_html",
+        "djhtml": "file_html",
+        "html.tmpl": "file_html",
+        "fsproj": "file_xml",
+        "vbproj": "file_xml",
+        "props": "file_xml",
+        "targets": "file_xml",
+        "nuspec": "file_xml",
+        "xaml": "file_xml",
+        "axaml": "file_xml",
+        "resx": "file_xml",
+        "fxml": "file_xml",
+        "iml": "file_xml",
+        "jnlp": "file_xml",
+        "rss": "file_xml",
+        "atom": "file_xml",
+        "xliff": "file_xml",
+        "xlf": "file_xml",
+        "storyboard": "file_xml",
+        "xib": "file_xml",
+        "tld": "file_xml",
+        "ash": "file_shell",
+        "dash": "file_shell",
+        "bats": "file_shell",
+        "command": "file_shell",
+        "psm1": "file_powershell",
+        "psd1": "file_powershell",
+        "pssc": "file_powershell",
+        "psrc": "file_powershell",
+        "ddl": "file_sql",
+        "dml": "file_sql",
+        "psql": "file_sql",
+        "pgsql": "file_sql",
+        "mysql": "file_sql",
+        "inf": "file_config",
+        "reg": "file_config",
+        "url": "file_config",
+        "desktop": "file_config",
+        "service": "file_config",
+        "socket": "file_config",
+        "timer": "file_config",
+        "config.js": "file_config",
+        "config.cjs": "file_config",
+        "config.mjs": "file_config",
+        "config.ts": "file_config",
+        "config.cts": "file_config",
+        "config.mts": "file_config",
+        "prefs": "file_properties",
+        "rej": "file_patch",
+        "gvy": "file_groovy",
+        "gy": "file_groovy",
+        "gsh": "file_groovy",
+        "mill": "file_scala",
+        "phtml": "file_php",
+        "php3": "file_php",
+        "php4": "file_php",
+        "php5": "file_php",
+        "phps": "file_php",
+        "phpt": "file_php",
+        "psgi": "file_perl",
+        "cgi": "file_perl",
+        "h++": "file_h",
+        "c++": "file_cpp",
+        "ipp": "file_cpp",
+        "tpp": "file_cpp",
+        "inl": "file_cpp",
+        "csx": "file_cs",
+        "fs": "file_fsharp",
+        "fsi": "file_fsharp",
+        "fsx": "file_fsharp",
+        "swiftinterface": "file_swift",
+        "tmpl": "file_go_template",
+        "ru": "file_ruby",
+        "rbi": "file_ruby",
+        "jbuilder": "file_ruby",
+        "rhtml": "file_ruby",
+        "rockspec": "file_lua",
+        "zig": "file_zig",
+        "zon": "file_zig",
+        "gd": "file_gdscript",
+        "tscn": "file_godot",
+        "tres": "file_godot",
+        "godot": "file_godot",
+        "import": "file_godot",
+        "gdshader": "file_gdshader",
+        "gdshaderinc": "file_gdshader",
+        "adoc": "file_asciidoc",
+        "asciidoc": "file_asciidoc",
+        "typ": "file_typst",
+        "d": "file_d",
+        "di": "file_d",
+        "prisma": "file_prisma",
+        "slint": "file_slint",
+        "escript": "file_erlang",
+        "app.src": "file_erlang",
+        "hs-boot": "file_haskell",
+        "hsig": "file_haskell",
+        "mll": "file_ml",
+        "mly": "file_ml",
+        "cljd": "file_clojure",
+        "bb": "file_clojure",
+        "jl": "file_julia",
+        "r": "file_r",
+        "rprofile": "file_r",
+        "nix": "file_nix",
+        "tex": "file_latex",
+        "ltx": "file_latex",
+        "sty": "file_latex",
+        "cls": "file_latex",
+        "dtx": "file_latex",
+        "ins": "file_latex",
+        "bbx": "file_latex",
+        "cbx": "file_latex",
+        "bib": "file_latex",
+        "containerfile": "file_docker",
+        "mak": "file_makefile",
+        "make": "file_makefile",
+        "tofu": "file_terraform",
+        "tftest.hcl": "file_terraform",
+        "nomad": "file_hcl",
+        "pkr.hcl": "file_hcl",
+        "regexp": "file_regexp",
+        "idl": "file_idl",
+        "dat": "file_binary",
+        "wasm": "file_binary",
+        "jspf": "file_jsp",
+        "jsph": "file_jsp",
+        "tag": "file_jsp",
+        "tagf": "file_jsp",
+        "tagx": "file_jsp",
+        "ftl": "file_freemarker",
+        "ftlh": "file_freemarker",
+        "ftlx": "file_freemarker",
+        "astro": "file_astro",
+        "nim": "file_any",
+        "wit": "file_any",
+        "wat": "file_any",
+        "sol": "file_any",
+        "v": "file_any",
+        "sv": "file_any",
+        "gitignore": "file_ignored",
+        "dockerignore": "file_ignored",
+        "pom": "file_xml",
+        "tpl": "file_go_template",
+        "txt": "file_text",
+        "text": "file_text",
+        "dot": "file_graphviz",
+        "gv": "file_graphviz",
+        "env.staging": "file_env",
+        "env.dev": "file_env",
+        "env.prod": "file_env",
+        "env.sample": "file_env",
+        "env.template": "file_env",
+        "env.ci": "file_env",
+        "env.defaults": "file_env",
+        "env.vault": "file_env",
+        "env.stage": "file_env",
+        "env.qa": "file_env",
+        "env.preview": "file_env"
     },
     "languageIds": {
         "dotenv": "file_env",
